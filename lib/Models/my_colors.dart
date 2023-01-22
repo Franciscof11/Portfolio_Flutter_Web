@@ -10,10 +10,12 @@ class MyColors {
     Color(0xff10505B),
     Color(0xffD48207),
     Color(0xffE36942),
-    Color(0xffB72C31),
     Color(0xff353A71),
     Color(0xff25476D),
     Color(0xffC7C8CA),
+    Color.fromARGB(255, 103, 3, 143),
+    Color.fromARGB(255, 3, 207, 221),
+    Color.fromARGB(255, 20, 209, 115),
   ];
 }
 

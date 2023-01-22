@@ -15,10 +15,10 @@ class MyStrings {
     "Welcome To My Portfolio!",
   ];
 
-  static final String myName = "Hossain K M Shahriar";
-  static final String myTagLine = "Software Engineer, YZU-CHINA, 2021";
+  static final String myName = "Francisco Gabriel";
+  static final String myTagLine = "Mobile Developer";
   static final String myDescription =
-      "It’s the time when I can believe in myself. After all these years of learning and practicing now I feel that I can do professional and serious jobs.\n\nI was so upset at a time when I wasn't able to figure out what I do and what’s my ability. But struggling and working hard gave me confidence.\n\nI’m a Flutter developer. I was developing things using flutter for almost a year. Before this I was busy working with python and the frameworks of it. For my graduation project I was looking for a way to build it and I found Flutter. Which changes my developing career completely. I just love coding Flutter. It’s beautiful, versatile and it’s a super power.\n\nI’m fully ready for the interview as a flutter developer.";
+      "Enthusiastic about the technological area related to programming and its entire ecosystem, I started my training with studies on native applications using Java and Koltin, as I have always identified myself with mobile development. After that I entered the world of hybrid development, perfecting myself in Flutter, as well as in Android Native, my main stack currently. My passion for programming and the IT area started in childhood, and since then I've been studying and working continuously to become a better professional.";
   static final String myMail = "devshakib015@gmail.com";
   static final String myPhone = "+8801710265421";
   static final String myMessenger = "venomShakib";
