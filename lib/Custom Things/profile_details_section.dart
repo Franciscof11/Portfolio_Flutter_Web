@@ -52,7 +52,7 @@ class ProfileDetailsSection extends StatelessWidget {
             style: ButtonStyle(
               padding: MaterialStateProperty.all(EdgeInsets.all(16)),
               backgroundColor: MaterialStateProperty.all(
-                Colors.black54,
+                Colors.blueGrey[700],
               ),
             ),
             onPressed: () async {

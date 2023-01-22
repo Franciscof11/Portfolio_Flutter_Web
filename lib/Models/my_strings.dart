@@ -27,7 +27,7 @@ class MyStrings {
   static final String myWechat = "venomshakib";
   static final String myGithub = "devShakib015";
   static final String myResume =
-      "https://docs.google.com/document/d/1H_hMzZQXB9ZEfFmNQ7mrfdVOwSfUckmwnoJfaOsXvJQ/edit?usp=sharing";
+      "https://docs.google.com/document/d/1Ui_bfssTp0Yqb4X7-5rWfvpfEGLX5_0I-w6AWGxBiTk/edit?usp=share_link";
 
   static final List<Map<String, dynamic>> contactButtons = [
     {
