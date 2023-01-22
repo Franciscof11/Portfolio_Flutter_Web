@@ -105,6 +105,8 @@ class _AppStructureState extends State<AppStructure> {
             child: _height >= 540
                 ? Card(
                     color: Colors.white,
+                    shape: ContinuousRectangleBorder(
+                        borderRadius: BorderRadius.circular(30)),
                     elevation: 20,
                     borderOnForeground: true,
                     child: Padding(
