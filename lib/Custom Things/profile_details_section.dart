@@ -46,12 +46,11 @@ class ProfileDetailsSection extends StatelessWidget {
               fontWeight: FontWeight.bold,
             ),
           ),
-          SizedBox(
-            height: 20,
-          ),
+          SizedBox(height: 80),
           ElevatedButton(
             style: ButtonStyle(
-              padding: MaterialStateProperty.all(EdgeInsets.all(16)),
+              padding: MaterialStateProperty.all(
+                  EdgeInsets.symmetric(horizontal: 40, vertical: 20)),
               backgroundColor: MaterialStateProperty.all(
                 Colors.blueGrey[700],
               ),
@@ -81,6 +80,7 @@ class ProfileDetailsSection extends StatelessWidget {
                         await MyUrl.launchURL(button["url"]);
                       },
                       color: Colors.black87,
+                      iconSize: 40,
                       icon: Icon(
                         button["icon"],
                       ),
