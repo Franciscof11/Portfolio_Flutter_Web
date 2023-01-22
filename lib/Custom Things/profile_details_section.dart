@@ -46,7 +46,55 @@ class ProfileDetailsSection extends StatelessWidget {
               fontWeight: FontWeight.bold,
             ),
           ),
-          SizedBox(height: 80),
+          SizedBox(height: 45),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: [
+              Text(
+                'Tecnologies : ',
+                style: TextStyle(
+                  height: 1.6,
+                  fontSize: 19,
+                  color: Colors.black87,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              SizedBox(width: 20),
+              Container(
+                height: 50,
+                width: 50,
+                decoration: BoxDecoration(
+                  image: DecorationImage(
+                    image: NetworkImage(
+                        'https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_flutter_icon_130599.png'),
+                  ),
+                ),
+              ),
+              SizedBox(width: 20),
+              Container(
+                height: 50,
+                width: 50,
+                decoration: BoxDecoration(
+                  image: DecorationImage(
+                    image: NetworkImage(
+                        'https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_kotlin_icon_130487.png'),
+                  ),
+                ),
+              ),
+              SizedBox(width: 20),
+              Container(
+                height: 50,
+                width: 50,
+                decoration: BoxDecoration(
+                  image: DecorationImage(
+                    image: NetworkImage(
+                        'https://cdn-icons-png.flaticon.com/512/226/226777.png'),
+                  ),
+                ),
+              ),
+            ],
+          ),
+          SizedBox(height: 45),
           ElevatedButton(
             style: ButtonStyle(
               padding: MaterialStateProperty.all(

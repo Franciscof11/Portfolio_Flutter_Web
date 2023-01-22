@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:my_portfolio/Custom%20Things/profile_details_section.dart';
 import 'package:my_portfolio/Custom%20Things/profile_image_section.dart';
