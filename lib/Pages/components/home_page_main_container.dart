@@ -40,6 +40,7 @@ class HomePageMainContainer extends StatelessWidget {
                           wordSpacing: 2,
                         ),
                         textAlign: TextAlign.center,
+                        duration: Duration(milliseconds: 1800),
                       ),
                     )
                     .toList(),
