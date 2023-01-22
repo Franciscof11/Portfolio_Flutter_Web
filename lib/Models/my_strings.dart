@@ -6,8 +6,8 @@ class MyStrings {
 
   static final List<String> keywords = ["Develop", "Debug", "Deploy"];
 
-  static final String headLine = "Howdy, It's Shakib";
-  static final String tagLine = " Welcome to my territory!";
+  static final String headLine = "Mobile Developer";
+  static final String tagLine = "";
 
   static final List<String> homePageMainContents = [
     "Hello",

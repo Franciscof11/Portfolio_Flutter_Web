@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
           Theme.of(context).textTheme,
         ),
       ),
-      title: 'devShakib | Developer',
+      title: 'Francisco Gabriel Portfolio',
       color: MyColors.primaryColor,
       home: AppStructure(),
     );

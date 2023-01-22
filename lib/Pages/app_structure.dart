@@ -112,44 +112,6 @@ class _AppStructureState extends State<AppStructure> {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
-                          Padding(
-                            padding: const EdgeInsets.symmetric(
-                                horizontal: 6, vertical: 10),
-                            child: Align(
-                              alignment: _width >= ResponsiveSize.tabWidth
-                                  ? Alignment.centerRight
-                                  : Alignment.center,
-                              child: Wrap(
-                                alignment: WrapAlignment.end,
-                                runAlignment: WrapAlignment.end,
-                                children: MyColors.bgColors
-                                    .map(
-                                      (color) => MaterialButton(
-                                        padding: EdgeInsets.zero,
-                                        minWidth: 30,
-                                        height: 18,
-                                        onPressed: () {
-                                          setState(() {
-                                            _selectedBg = MyColors.bgColors
-                                                .indexOf(color);
-                                          });
-                                        },
-                                        child: Container(
-                                          width: 15,
-                                          height: 15,
-                                          decoration: BoxDecoration(
-                                            color: color,
-                                            borderRadius: BorderRadius.circular(
-                                              50,
-                                            ),
-                                          ),
-                                        ),
-                                      ),
-                                    )
-                                    .toList(),
-                              ),
-                            ),
-                          ),
                           Expanded(
                             // child: _selectTabs(),
                             child: PageTransitionSwitcher(
@@ -193,24 +155,24 @@ class _AppStructureState extends State<AppStructure> {
                                     ),
                                   ),
                                   IconButton(
-                                    tooltip: "Skills",
+                                    tooltip: "About me",
                                     onPressed: () {
                                       setState(() {
-                                        _selectedTab = 2;
+                                        _selectedTab = 4;
                                         _selectedBg = Random()
                                             .nextInt(MyColors.bgColors.length);
                                       });
                                     },
                                     icon: Icon(
-                                      CupertinoIcons.square_stack_3d_up_fill,
+                                      CupertinoIcons.profile_circled,
                                       color: Colors.black87,
                                     ),
                                   ),
                                   IconButton(
-                                    tooltip: "Works",
+                                    tooltip: "Projects",
                                     onPressed: () {
                                       setState(() {
-                                        _selectedTab = 3;
+                                        _selectedTab = 2;
                                         _selectedBg = Random()
                                             .nextInt(MyColors.bgColors.length);
                                       });
@@ -221,16 +183,16 @@ class _AppStructureState extends State<AppStructure> {
                                     ),
                                   ),
                                   IconButton(
-                                    tooltip: "Profile",
+                                    tooltip: "Contact",
                                     onPressed: () {
                                       setState(() {
-                                        _selectedTab = 4;
+                                        _selectedTab = 3;
                                         _selectedBg = Random()
                                             .nextInt(MyColors.bgColors.length);
                                       });
                                     },
                                     icon: Icon(
-                                      CupertinoIcons.profile_circled,
+                                      Icons.call_outlined,
                                       color: Colors.black87,
                                     ),
                                   ),
