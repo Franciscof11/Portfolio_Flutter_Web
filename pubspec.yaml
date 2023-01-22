@@ -47,6 +47,6 @@ flutter:
   #         weight: 700
 
 flutter_native_splash:
-  color: "#36B799"
+  color: "#888e93"
   image: assets/images/splash.png
   web_image_mode: center
