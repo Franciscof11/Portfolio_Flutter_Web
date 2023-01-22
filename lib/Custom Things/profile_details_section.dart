@@ -40,7 +40,8 @@ class ProfileDetailsSection extends StatelessWidget {
           Text(
             MyStrings.myDescription,
             style: TextStyle(
-              fontSize: 18,
+              height: 1.6,
+              fontSize: 19,
               color: Colors.black87,
               fontWeight: FontWeight.bold,
             ),

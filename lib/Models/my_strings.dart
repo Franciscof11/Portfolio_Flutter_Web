@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class MyStrings {
@@ -25,44 +24,19 @@ class MyStrings {
   static final String myFacebook = "venomShakib";
   static final String myWhatsApp = "+8801710265421";
   static final String myWechat = "venomshakib";
-  static final String myGithub = "devShakib015";
+  static final String myGithub = "Franciscof11";
   static final String myResume =
       "https://docs.google.com/document/d/1Ui_bfssTp0Yqb4X7-5rWfvpfEGLX5_0I-w6AWGxBiTk/edit?usp=share_link";
 
   static final List<Map<String, dynamic>> contactButtons = [
     {
-      "icon": CupertinoIcons.mail_solid,
-      "url": "mailto:${MyStrings.myMail}",
-      "tooltip": MyStrings.myMail,
-    },
-    {
-      "icon": CupertinoIcons.phone_fill,
-      "url": "tel:${MyStrings.myPhone}",
-      "tooltip": MyStrings.myPhone,
-    },
-    {
-      "icon": FontAwesomeIcons.facebookMessenger,
-      "url": "https://m.me/${MyStrings.myMessenger}/",
-      "tooltip": MyStrings.myMessenger,
-    },
-    {
-      "icon": FontAwesomeIcons.whatsappSquare,
-      "url": "https://api.whatsapp.com/send?phone=${MyStrings.myWhatsApp}",
-      "tooltip": MyStrings.myWhatsApp,
-    },
-    {
-      "icon": FontAwesomeIcons.weixin,
-      "url": "https://weixin://contacts/profile/{${MyStrings.myWhatsApp}}",
-      "tooltip": MyStrings.myWechat,
-    },
-    {
-      "icon": FontAwesomeIcons.facebookF,
-      "url": "https://facebook.com/${MyStrings.myFacebook}",
-      "tooltip": MyStrings.myFacebook,
-    },
-    {
       "icon": FontAwesomeIcons.github,
       "url": "https://github.com/${MyStrings.myGithub}",
+      "tooltip": MyStrings.myGithub,
+    },
+    {
+      "icon": FontAwesomeIcons.linkedin,
+      "url": "https://www.linkedin.com/in/franciscossg/",
       "tooltip": MyStrings.myGithub,
     }
   ];
