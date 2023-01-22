@@ -1,72 +1,84 @@
+import 'package:container_tab_indicator/container_tab_indicator.dart';
 import 'package:flutter/material.dart';
-import 'package:my_portfolio/Models/my_skills.dart';
-import 'package:percent_indicator/linear_percent_indicator.dart';
+
+import 'projects_pages/all_page.dart';
+import 'projects_pages/flutter_page.dart';
+import 'projects_pages/kotlin_page.dart';
 
 class SkillsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: Padding(
-        padding: EdgeInsets.all(8.0),
-        child: GridView.extent(
-          physics: BouncingScrollPhysics(),
-          maxCrossAxisExtent: 350,
-          children: MySkills.all
-              .map(
-                (skill) => Padding(
-                  padding: EdgeInsets.all(16.0),
-                  child: Card(
-                    elevation: 30,
-                    color: Colors.white,
-                    shadowColor: Colors.black54,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(15),
-                    ),
-                    child: GridTile(
-                      header: Padding(
-                        padding: EdgeInsets.all(16.0),
-                        child: Center(
-                          child: Text(
-                            skill.title,
-                            textAlign: TextAlign.center,
-                            style: TextStyle(
-                              fontSize: 16,
-                              fontWeight: FontWeight.bold,
-                            ),
+      width: MediaQuery.of(context).size.width,
+      height: MediaQuery.of(context).size.height,
+      child: Column(
+        children: [
+          SizedBox(height: 40),
+          Text(
+            'Projects',
+            style: TextStyle(
+              fontSize: 50,
+              color: Colors.black87,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+          SizedBox(height: 25),
+          DefaultTabController(
+            length: 3,
+            child: Column(
+              children: [
+                Container(
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.all(Radius.circular(16))),
+                  width: 1200,
+                  height: 564,
+                  child: Column(
+                    children: [
+                      Container(
+                        decoration: BoxDecoration(
+                            borderRadius:
+                                BorderRadius.all(Radius.circular(16))),
+                        width: 350,
+                        child: TabBar(
+                          overlayColor:
+                              MaterialStatePropertyAll(Colors.transparent),
+                          onTap: (value) => {},
+                          unselectedLabelColor: Colors.grey[800],
+                          labelColor: Colors.deepPurple,
+                          labelStyle: TextStyle(
+                            fontSize: 24,
+                            color: Colors.black87,
+                            fontWeight: FontWeight.bold,
                           ),
+                          indicator: const ContainerTabIndicator(
+                            height: 3,
+                            padding: EdgeInsets.only(top: 20),
+                            width: 40,
+                            color: Colors.deepPurple,
+                          ),
+                          tabs: [
+                            Text('All'),
+                            Text('Flutter'),
+                            Text('Kotlin'),
+                          ],
                         ),
                       ),
-                      footer: Padding(
-                        padding: const EdgeInsets.all(16.0),
-                        child: Center(
-                          child: LinearPercentIndicator(
-                            lineHeight: 20,
-                            animation: true,
-                            animationDuration: 1000,
-                            curve: Curves.easeInOutExpo,
-                            center: Text(
-                              "${skill.progress}%",
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 12,
-                              ),
-                            ),
-                            percent: skill.progress / 100,
-                            backgroundColor: Colors.black12,
-                            progressColor: Colors.black54,
-                          ),
-                        ),
-                      ),
-                      child: Padding(
-                        padding: EdgeInsets.all(64.0),
-                        child: Image.asset(skill.image),
-                      ),
-                    ),
+                      SizedBox(height: 20),
+                      Expanded(
+                        child: TabBarView(children: [
+                          AllPage(),
+                          FlutterPage(),
+                          KotlinPage(),
+                        ]),
+                      )
+                    ],
                   ),
-                ),
-              )
-              .toList(),
-        ),
+                )
+              ],
+            ),
+          ),
+          SizedBox(height: 20),
+        ],
       ),
     );
   }
