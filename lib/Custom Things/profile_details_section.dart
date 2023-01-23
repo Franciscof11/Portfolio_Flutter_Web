@@ -65,8 +65,7 @@ class ProfileDetailsSection extends StatelessWidget {
                 width: 50,
                 decoration: BoxDecoration(
                   image: DecorationImage(
-                    image: NetworkImage(
-                        'https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_flutter_icon_130599.png'),
+                    image: AssetImage('assets/icons/flutter.png'),
                   ),
                 ),
               ),
@@ -76,8 +75,7 @@ class ProfileDetailsSection extends StatelessWidget {
                 width: 50,
                 decoration: BoxDecoration(
                   image: DecorationImage(
-                    image: NetworkImage(
-                        'https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_kotlin_icon_130487.png'),
+                    image: AssetImage('assets/icons/kotlin.png'),
                   ),
                 ),
               ),
@@ -87,8 +85,7 @@ class ProfileDetailsSection extends StatelessWidget {
                 width: 50,
                 decoration: BoxDecoration(
                   image: DecorationImage(
-                    image: NetworkImage(
-                        'https://cdn-icons-png.flaticon.com/512/226/226777.png'),
+                    image: AssetImage('assets/icons/java.png'),
                   ),
                 ),
               ),
