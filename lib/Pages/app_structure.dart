@@ -4,7 +4,6 @@ import 'package:animations/animations.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:my_portfolio/Models/my_colors.dart';
-import 'package:my_portfolio/Models/my_images.dart';
 import 'package:my_portfolio/Models/responsive_size.dart';
 import 'package:my_portfolio/Pages/home_page.dart';
 import 'package:my_portfolio/Pages/profile_page.dart';
@@ -66,22 +65,11 @@ class _AppStructureState extends State<AppStructure> {
                       highlightColor:
                           MyColors.bgColors[_selectedBg].withAlpha(200),
                       child: Text(
-                        "Built Using Flutter With Love",
+                        "Built Using Flutter",
                         style: TextStyle(
                           fontWeight: FontWeight.w900,
                           wordSpacing: 2,
                         ),
-                      ),
-                    ),
-                    SizedBox(
-                      width: 5,
-                    ),
-                    Container(
-                      width: 20,
-                      height: 20,
-                      child: Image.asset(
-                        MyImages.loveImage,
-                        fit: BoxFit.cover,
                       ),
                     ),
                   ],
