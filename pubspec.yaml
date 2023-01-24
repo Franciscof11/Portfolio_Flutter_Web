@@ -20,7 +20,13 @@ dependencies:
   percent_indicator: ^3.0.1
   animations: ^2.0.0
   shimmer: ^2.0.0
+  lottie: ^2.2.0
   container_tab_indicator: ^0.3.0
+
+flutter_native_splash:
+  color: "#888e93"
+  image: assets/images/splash.png
+  web_image_mode: center
 
 dev_dependencies:
   flutter_test:
@@ -31,9 +37,7 @@ flutter:
   uses-material-design: true
 
   assets:
-    - assets/images/
-    - assets/icons/
-    - assets/images/works/
+    - assets/
 
   # fonts:
   #   - family: Schyler
@@ -46,8 +50,3 @@ flutter:
   #       - asset: fonts/TrajanPro.ttf
   #       - asset: fonts/TrajanPro_Bold.ttf
   #         weight: 700
-
-flutter_native_splash:
-  color: "#888e93"
-  image: assets/images/splash.png
-  web_image_mode: center

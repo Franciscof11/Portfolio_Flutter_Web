@@ -13,7 +13,7 @@ class SkillsPage extends StatelessWidget {
       height: MediaQuery.of(context).size.height,
       child: Column(
         children: [
-          SizedBox(height: 40),
+          SizedBox(height: 20),
           Text(
             'Projects',
             style: TextStyle(
@@ -22,7 +22,7 @@ class SkillsPage extends StatelessWidget {
               fontWeight: FontWeight.bold,
             ),
           ),
-          SizedBox(height: 25),
+          SizedBox(height: 20),
           DefaultTabController(
             length: 3,
             child: Column(
@@ -77,7 +77,6 @@ class SkillsPage extends StatelessWidget {
               ],
             ),
           ),
-          SizedBox(height: 20),
         ],
       ),
     );
