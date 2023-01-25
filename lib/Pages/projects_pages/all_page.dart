@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 
+import '../../Models/launch_url.dart';
+import '../../Models/my_strings.dart';
+
 class AllPage extends StatelessWidget {
   const AllPage({super.key});
 
@@ -59,7 +62,9 @@ class AllPage extends StatelessWidget {
                       style: ElevatedButton.styleFrom(
                           fixedSize: Size(200, 50),
                           backgroundColor: Colors.white),
-                      onPressed: () {},
+                      onPressed: () async {
+                        await MyUrl.launchURL(MyStrings.weatherNowLink);
+                      },
                       child: Image.asset(
                         'assets/icons/github_icon.png',
                         height: 400,
@@ -147,7 +152,9 @@ class AllPage extends StatelessWidget {
                       style: ElevatedButton.styleFrom(
                           fixedSize: Size(200, 50),
                           backgroundColor: Colors.white),
-                      onPressed: () {},
+                      onPressed: () async {
+                        await MyUrl.launchURL(MyStrings.mockShopLink);
+                      },
                       child: Image.asset(
                         'assets/icons/github_icon.png',
                         height: 400,
@@ -236,7 +243,9 @@ class AllPage extends StatelessWidget {
                       style: ElevatedButton.styleFrom(
                           fixedSize: Size(200, 50),
                           backgroundColor: Colors.white),
-                      onPressed: () {},
+                      onPressed: () async {
+                        await MyUrl.launchURL(MyStrings.portfolioLink);
+                      },
                       child: Image.asset(
                         'assets/icons/github_icon.png',
                         height: 400,
