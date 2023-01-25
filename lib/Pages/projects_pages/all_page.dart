@@ -125,7 +125,7 @@ class AllPage extends StatelessWidget {
                     ),
                     SizedBox(height: 40),
                     Text(
-                      'Weather Now',
+                      'Mock Shop',
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 25,
@@ -135,7 +135,7 @@ class AllPage extends StatelessWidget {
                     Container(
                       child: Text(
                         maxLines: 5,
-                        'A Forecast Weather App. The app shows us the current temperature (in Celsius) of the chosen location, and also informs us of the next weather forecasts. The App consumes  the open-source API WeatherApi (https://www.weatherapi.com/).',
+                        'App that simulates an online sales application, consuming the DummyJSON open source API (https://dummyjson.com/). The application allows us to explore the list of products that comes from the api, see the details of the products listed and simulates a shopping cart.',
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: 18,
@@ -164,9 +164,9 @@ class AllPage extends StatelessWidget {
                         children: [
                           Container(
                             width: 120,
-                            height: 80,
+                            height: 60,
                             child: Padding(
-                              padding: const EdgeInsets.only(top: 14),
+                              padding: const EdgeInsets.only(top: 0),
                               child: Lottie.network(
                                 'https://assets8.lottiefiles.com/packages/lf20_REyGrcDsYY.json',
                                 fit: BoxFit.cover,
@@ -182,7 +182,7 @@ class AllPage extends StatelessWidget {
                 ),
                 SizedBox(width: 50),
                 Image.asset(
-                  'assets/icons/weather_now.png',
+                  'assets/icons/mock_shop.png',
                   width: 450,
                   height: 460,
                 ),
@@ -215,7 +215,7 @@ class AllPage extends StatelessWidget {
                     ),
                     SizedBox(height: 40),
                     Text(
-                      'Weather Now',
+                      'Portfolio WebApp',
                       style: TextStyle(
                         color: Colors.white,
                         fontSize: 25,
@@ -225,7 +225,7 @@ class AllPage extends StatelessWidget {
                     Container(
                       child: Text(
                         maxLines: 5,
-                        'A Forecast Weather App. The app shows us the current temperature (in Celsius) of the chosen location, and also informs us of the next weather forecasts. The App consumes  the open-source API WeatherApi (https://www.weatherapi.com/).',
+                        'An online portfolio that shows a little about me, and the projects I have been building. This is my first project using Flutter Web, to apply all my flutter knowledge to the web aspect, bringing responsiveness and reactivity.',
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: 18,
@@ -241,7 +241,7 @@ class AllPage extends StatelessWidget {
                           backgroundColor: Colors.white),
                       onPressed: () {},
                       child: Image.asset(
-                        'assets/icons/github_icon.png',
+                        'assets/icons/portfolio.png',
                         height: 400,
                         width: 400,
                       ),
