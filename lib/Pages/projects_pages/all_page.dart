@@ -114,16 +114,14 @@ class AllPage extends StatelessWidget {
                 SizedBox(width: 60),
                 Container(
                   width: 500,
-                  height: 500,
+                  height: 510,
                   child: Column(children: [
                     SizedBox(height: 15),
                     Lottie.network(
-                      'https://assets2.lottiefiles.com/packages/lf20_trr3kzyu.json',
-                      width: 300,
-                      height: 150,
-                      fit: BoxFit.none,
+                      'https://assets7.lottiefiles.com/packages/lf20_TMRZ23.json',
+                      width: 180,
+                      height: 180,
                     ),
-                    SizedBox(height: 40),
                     Text(
                       'Mock Shop',
                       style: TextStyle(
@@ -208,12 +206,11 @@ class AllPage extends StatelessWidget {
                   child: Column(children: [
                     SizedBox(height: 15),
                     Lottie.network(
-                      'https://assets2.lottiefiles.com/packages/lf20_trr3kzyu.json',
-                      width: 300,
-                      height: 150,
-                      fit: BoxFit.none,
+                      'https://assets9.lottiefiles.com/packages/lf20_XMTduDVODZ.json',
+                      width: 200,
+                      height: 180,
                     ),
-                    SizedBox(height: 40),
+                    SizedBox(height: 20),
                     Text(
                       'Portfolio WebApp',
                       style: TextStyle(
@@ -241,7 +238,7 @@ class AllPage extends StatelessWidget {
                           backgroundColor: Colors.white),
                       onPressed: () {},
                       child: Image.asset(
-                        'assets/icons/portfolio.png',
+                        'assets/icons/github_icon.png',
                         height: 400,
                         width: 400,
                       ),
@@ -254,7 +251,7 @@ class AllPage extends StatelessWidget {
                         children: [
                           Container(
                             width: 120,
-                            height: 80,
+                            height: 72,
                             child: Padding(
                               padding: const EdgeInsets.only(top: 14),
                               child: Lottie.network(
@@ -272,7 +269,7 @@ class AllPage extends StatelessWidget {
                 ),
                 SizedBox(width: 50),
                 Image.asset(
-                  'assets/icons/weather_now.png',
+                  'assets/icons/portfolio.png',
                   width: 450,
                   height: 460,
                 ),
