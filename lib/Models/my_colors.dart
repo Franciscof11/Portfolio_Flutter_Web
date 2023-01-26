@@ -7,15 +7,14 @@ class MyColors {
   static final Color phoneColor = Color(0xff222222);
 
   static final List<Color> bgColors = [
+    /* HOME PAGE */
     Color(0xff10505B),
-    Color(0xffD48207),
-    Color(0xffE36942),
-    Color(0xff353A71),
-    Color(0xff25476D),
+    /* PROFILE PAGE */
     Color(0xffC7C8CA),
+    /* PROJECTS PAGE */
     Color.fromARGB(255, 103, 3, 143),
-    Color.fromARGB(255, 3, 207, 221),
-    Color.fromARGB(255, 20, 209, 115),
+    /* CONTACT PAGE */
+    Color.fromARGB(255, 10, 199, 126),
   ];
 }
 

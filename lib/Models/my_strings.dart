@@ -20,6 +20,7 @@ class MyStrings {
       "Enthusiastic about the technological area related to programming and its entire ecosystem, I started my training with studies on native applications using Java and Koltin, as I have always identified myself with mobile development. After that I entered the world of hybrid development, perfecting myself in Flutter, as well as in Android Native, my main stack currently. My passion for programming and the IT area started in childhood, and since then I've been studying and working continuously to become a better professional.";
 
   static final String myGithub = "Franciscof11";
+  static final String whats = "https://contate.me/Franciscof11";
   static final String weatherNowLink =
       "https://github.com/Franciscof11/WeatherNow--Flutter";
   static final String mockShopLink =
@@ -41,7 +42,4 @@ class MyStrings {
       "tooltip": MyStrings.myGithub,
     }
   ];
-
-  static final String loremPara =
-      "Lorem labore amet eu ex aliquip ex fugiat. Fugiat enim et irure ullamco quis sint sint laborum adipisicing do tempor. Qui anim occaecat elit amet magna est. Ex proident culpa voluptate adipisicing amet duis. Lorem deserunt incididunt magna magna veniam aliquip Lorem. Elit minim nisi nisi proident nulla veniam commodo occaecat voluptate eiusmod non duis sint.";
 }
