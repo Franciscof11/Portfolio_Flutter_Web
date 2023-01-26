@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lottie/lottie.dart';
 
 import '../Models/launch_url.dart';
 import '../Models/my_strings.dart';
@@ -54,7 +55,7 @@ class WorksPage extends StatelessWidget {
                                 width: 400,
                                 height: 70,
                                 decoration: BoxDecoration(
-                                    color: Colors.blueGrey,
+                                    color: Color.fromARGB(255, 152, 245, 175),
                                     borderRadius: BorderRadius.circular(14)),
                                 child: Row(
                                   mainAxisAlignment: MainAxisAlignment.center,
@@ -66,7 +67,7 @@ class WorksPage extends StatelessWidget {
                                     ),
                                     SizedBox(width: 15),
                                     Text(
-                                      'Phone:  +55 (98) 99161-9987',
+                                      'Phone:  +55 (98) 99161-9987     ',
                                       style: TextStyle(
                                         fontSize: 22,
                                         color: Colors.black87,
@@ -81,7 +82,7 @@ class WorksPage extends StatelessWidget {
                                 width: 400,
                                 height: 70,
                                 decoration: BoxDecoration(
-                                    color: Colors.blueGrey,
+                                    color: Color.fromARGB(255, 152, 245, 175),
                                     borderRadius: BorderRadius.circular(14)),
                                 child: Row(
                                   mainAxisAlignment: MainAxisAlignment.center,
@@ -108,7 +109,7 @@ class WorksPage extends StatelessWidget {
                                 width: 400,
                                 height: 70,
                                 decoration: BoxDecoration(
-                                    color: Colors.blueGrey,
+                                    color: Color.fromARGB(255, 152, 245, 175),
                                     borderRadius: BorderRadius.circular(14)),
                                 child: Row(
                                   mainAxisAlignment: MainAxisAlignment.center,
@@ -152,13 +153,13 @@ class WorksPage extends StatelessWidget {
                             ],
                           ),
                         ),
-                        SizedBox(width: 40),
-                        Image.asset(
-                          'assets/icons/contact.png',
+                        SizedBox(width: 80),
+                        Container(
                           width: 550,
                           height: 550,
-                          fit: BoxFit.cover,
-                        )
+                          child: Lottie.network(
+                              'https://assets8.lottiefiles.com/packages/lf20_hokifDNfXn.json'),
+                        ),
                       ],
                     ),
                   ],

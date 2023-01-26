@@ -14,7 +14,7 @@ class MyColors {
     /* PROJECTS PAGE */
     Color.fromARGB(255, 103, 3, 143),
     /* CONTACT PAGE */
-    Color.fromARGB(255, 10, 199, 126),
+    Color.fromARGB(224, 43, 153, 29),
   ];
 }
 

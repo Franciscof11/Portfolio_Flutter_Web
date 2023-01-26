@@ -119,13 +119,14 @@ class ProfileDetailsSection extends StatelessWidget {
             children: _contactButtons
                 .map(
                   (button) => Padding(
-                    padding: const EdgeInsets.all(10.0),
+                    padding: const EdgeInsets.all(12.0),
                     child: IconButton(
                       onPressed: () async {
                         await MyUrl.launchURL(button["url"]);
                       },
                       color: Colors.black87,
-                      iconSize: 40,
+                      style: ButtonStyle(),
+                      iconSize: 45,
                       icon: Icon(
                         button["icon"],
                       ),
