@@ -5,10 +5,10 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:my_portfolio/Models/my_colors.dart';
 import 'package:my_portfolio/Models/responsive_size.dart';
+import 'package:my_portfolio/Pages/contact_page.dart';
 import 'package:my_portfolio/Pages/home_page.dart';
 import 'package:my_portfolio/Pages/profile_page.dart';
-import 'package:my_portfolio/Pages/skills_page.dart';
-import 'package:my_portfolio/Pages/works_page.dart';
+import 'package:my_portfolio/Pages/projects_page.dart';
 import 'package:shimmer/shimmer.dart';
 
 class AppStructure extends StatefulWidget {

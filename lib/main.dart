@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData.light().copyWith(
         accentColor: MyColors.primaryColor,
-        primaryColor: MyColors.primaryColor, 
+        primaryColor: MyColors.primaryColor,
         appBarTheme: AppBarTheme(
           backgroundColor: MyColors.primaryColor,
         ),
