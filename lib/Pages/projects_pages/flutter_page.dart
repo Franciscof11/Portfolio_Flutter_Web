@@ -18,8 +18,8 @@ class FlutterPage extends StatelessWidget {
             ),
             child: Image.asset(
               'assets/icons/404.png',
-              width: 400,
-              height: 400,
+              width: 350,
+              height: 350,
             ),
           ),
         ],
