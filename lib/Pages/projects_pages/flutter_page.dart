@@ -5,198 +5,24 @@ class FlutterPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: 500,
-      width: 1000,
-      child: Center(
-        child: SingleChildScrollView(
-          child: Column(
-            children: [
-              SizedBox(height: 4),
-              Row(
-                crossAxisAlignment: CrossAxisAlignment.center,
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Container(
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(14),
-                      color: Colors.pink,
-                    ),
-                    width: 550,
-                    height: 505,
-                  ),
-                  SizedBox(width: 15),
-                  Text('DOWN'),
-                  SizedBox(width: 15),
-                  Container(
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(14),
-                      color: Colors.pink,
-                    ),
-                    width: 550,
-                    height: 505,
-                  ),
-                ],
-              ),
-              SizedBox(height: 40),
-              Row(
-                crossAxisAlignment: CrossAxisAlignment.center,
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Container(
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(14),
-                      color: Colors.pink,
-                    ),
-                    width: 550,
-                    height: 505,
-                  ),
-                  SizedBox(width: 15),
-                  Text('DOWN'),
-                  SizedBox(width: 15),
-                  Container(
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(14),
-                      color: Colors.pink,
-                    ),
-                    width: 550,
-                    height: 505,
-                  ),
-                ],
-              ),
-              SizedBox(height: 40),
-              Row(
-                crossAxisAlignment: CrossAxisAlignment.center,
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Container(
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(14),
-                      color: Colors.pink,
-                    ),
-                    width: 550,
-                    height: 505,
-                  ),
-                  SizedBox(width: 15),
-                  Text('DOWN'),
-                  SizedBox(width: 15),
-                  Container(
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(14),
-                      color: Colors.pink,
-                    ),
-                    width: 550,
-                    height: 505,
-                  ),
-                ],
-              ),
-              SizedBox(height: 40),
-              Row(
-                crossAxisAlignment: CrossAxisAlignment.center,
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Container(
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(14),
-                      color: Colors.pink,
-                    ),
-                    width: 550,
-                    height: 505,
-                  ),
-                  SizedBox(width: 15),
-                  Text('DOWN'),
-                  SizedBox(width: 15),
-                  Container(
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(14),
-                      color: Colors.pink,
-                    ),
-                    width: 550,
-                    height: 505,
-                  ),
-                ],
-              ),
-              SizedBox(height: 40),
-              Row(
-                crossAxisAlignment: CrossAxisAlignment.center,
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Container(
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(14),
-                      color: Colors.pink,
-                    ),
-                    width: 550,
-                    height: 505,
-                  ),
-                  SizedBox(width: 15),
-                  Text('DOWN'),
-                  SizedBox(width: 15),
-                  Container(
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(14),
-                      color: Colors.pink,
-                    ),
-                    width: 550,
-                    height: 505,
-                  ),
-                ],
-              ),
-              SizedBox(height: 40),
-              Row(
-                crossAxisAlignment: CrossAxisAlignment.center,
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Container(
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(14),
-                      color: Colors.pink,
-                    ),
-                    width: 550,
-                    height: 505,
-                  ),
-                  SizedBox(width: 15),
-                  Text('DOWN'),
-                  SizedBox(width: 15),
-                  Container(
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(14),
-                      color: Colors.pink,
-                    ),
-                    width: 550,
-                    height: 505,
-                  ),
-                ],
-              ),
-              SizedBox(height: 40),
-              Row(
-                crossAxisAlignment: CrossAxisAlignment.center,
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Container(
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(14),
-                      color: Colors.pink,
-                    ),
-                    width: 550,
-                    height: 505,
-                  ),
-                  SizedBox(width: 15),
-                  Text('DOWN'),
-                  SizedBox(width: 15),
-                  Container(
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(14),
-                      color: Colors.pink,
-                    ),
-                    width: 550,
-                    height: 505,
-                  ),
-                ],
-              ),
-            ],
+    return SingleChildScrollView(
+      child: Column(
+        children: [
+          SizedBox(height: 10),
+          Container(
+            width: 1200,
+            height: 500,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(14),
+              color: Colors.deepPurple[500],
+            ),
+            child: Image.asset(
+              'assets/icons/404.png',
+              width: 400,
+              height: 400,
+            ),
           ),
-        ),
+        ],
       ),
     );
   }
