@@ -212,27 +212,179 @@ class WorksPage extends StatelessWidget {
                   ],
                 ),
               )
+            /*Parte Responsiva para Mobile*/
             : SingleChildScrollView(
-                physics: BouncingScrollPhysics(),
                 child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Container(
                       width: double.infinity,
-                      height: 400,
-                      child: Container(
-                        color: Colors.pink,
-                        width: 400,
-                        height: 300,
+                      height: 401,
+                      child: Column(
+                        children: [
+                          Text(
+                            'Contact',
+                            style: TextStyle(
+                              fontSize: 40,
+                              color: Colors.black87,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          SizedBox(height: 30),
+                          Container(
+                            width: double.infinity,
+                            height: 55,
+                            decoration: BoxDecoration(
+                                color: Color.fromARGB(255, 152, 245, 175),
+                                borderRadius: BorderRadius.circular(14)),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Image.asset(
+                                  'assets/icons/phone.png',
+                                  width: 25,
+                                  height: 25,
+                                ),
+                                SizedBox(width: 15),
+                                Text(
+                                  'Phone:  +55 (98) 99161-9987     ',
+                                  style: TextStyle(
+                                    fontSize: 18,
+                                    color: Colors.black87,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                          SizedBox(height: 25),
+                          Container(
+                            width: double.infinity,
+                            height: 55,
+                            decoration: BoxDecoration(
+                                color: Color.fromARGB(255, 152, 245, 175),
+                                borderRadius: BorderRadius.circular(14)),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Image.asset(
+                                  'assets/icons/email.png',
+                                  width: 25,
+                                  height: 25,
+                                ),
+                                SizedBox(width: 15),
+                                Text(
+                                  ' franciscogabrielf11@gmail.com',
+                                  style: TextStyle(
+                                    fontSize: 19,
+                                    color: Colors.black87,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                          SizedBox(height: 25),
+                          Container(
+                            width: double.infinity,
+                            height: 50,
+                            decoration: BoxDecoration(
+                                color: Color.fromARGB(255, 152, 245, 175),
+                                borderRadius: BorderRadius.circular(14)),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              children: [
+                                Image.asset(
+                                  'assets/icons/whatsapp.png',
+                                  width: 25,
+                                  height: 25,
+                                ),
+                                SizedBox(width: 15),
+                                Text(
+                                  'WhatsApp:',
+                                  style: TextStyle(
+                                    fontSize: 22,
+                                    color: Colors.black87,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                                SizedBox(width: 15),
+                                ElevatedButton(
+                                  onPressed: () async {
+                                    await MyUrl.launchURL(MyStrings.whats);
+                                  },
+                                  child: Text(
+                                    'Click Here',
+                                    style: TextStyle(
+                                      fontSize: 18,
+                                      color: Colors.black87,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                  style: ElevatedButton.styleFrom(
+                                    backgroundColor: Colors.white,
+                                    minimumSize: Size(60, 40),
+                                  ),
+                                )
+                              ],
+                            ),
+                          ),
+                          SizedBox(height: 20),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              ElevatedButton(
+                                onPressed: () async {
+                                  await MyUrl.launchURL(MyStrings.githubLink);
+                                },
+                                style: ElevatedButton.styleFrom(
+                                  backgroundColor:
+                                      Color.fromARGB(255, 152, 245, 175),
+                                  shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(14),
+                                  ),
+                                ),
+                                child: Container(
+                                  width: 50,
+                                  height: 70,
+                                  child: Image.asset(
+                                    'assets/icons/github1.png',
+                                  ),
+                                ),
+                              ),
+                              SizedBox(width: 30),
+                              ElevatedButton(
+                                onPressed: () async {
+                                  await MyUrl.launchURL(MyStrings.linkedinLink);
+                                },
+                                style: ElevatedButton.styleFrom(
+                                  backgroundColor:
+                                      Color.fromARGB(255, 152, 245, 175),
+                                  shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(14),
+                                  ),
+                                ),
+                                child: Container(
+                                  width: 50,
+                                  height: 70,
+                                  child: Image.asset(
+                                    'assets/icons/linkedin1.png',
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ],
                       ),
                     ),
-                    SizedBox(
-                      height: 20,
-                    ),
                     Container(
-                      color: Colors.purple,
-                      width: 400,
-                      height: 300,
+                      width: double.infinity,
+                      height: 295,
+                      child: Lottie.network(
+                        'https://assets8.lottiefiles.com/packages/lf20_hokifDNfXn.json',
+                        fit: BoxFit.contain,
+                      ),
                     ),
                   ],
                 ),
