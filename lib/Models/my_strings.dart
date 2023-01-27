@@ -20,6 +20,9 @@ class MyStrings {
       "Enthusiastic about the technological area related to programming and its entire ecosystem, I started my training with studies on native applications using Java and Koltin, as I have always identified myself with mobile development. After that I entered the world of hybrid development, perfecting myself in Flutter, as well as in Android Native, my main stack currently. My passion for programming and the IT area started in childhood, and since then I've been studying and working continuously to become a better professional.";
 
   static final String myGithub = "Franciscof11";
+  static final String githubLink = "https://github.com/Franciscof11";
+  static final String linkedinLink =
+      "https://www.linkedin.com/in/franciscossg/";
   static final String whats = "https://contate.me/Franciscof11";
   static final String weatherNowLink =
       "https://github.com/Franciscof11/WeatherNow--Flutter";

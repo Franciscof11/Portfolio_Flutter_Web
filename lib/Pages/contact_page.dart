@@ -41,7 +41,7 @@ class WorksPage extends StatelessWidget {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
-                              SizedBox(height: 70),
+                              SizedBox(height: 20),
                               Text(
                                 'Send a message!',
                                 style: TextStyle(
@@ -149,6 +149,53 @@ class WorksPage extends StatelessWidget {
                                     )
                                   ],
                                 ),
+                              ),
+                              SizedBox(height: 30),
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  ElevatedButton(
+                                    onPressed: () async {
+                                      await MyUrl.launchURL(
+                                          MyStrings.githubLink);
+                                    },
+                                    style: ElevatedButton.styleFrom(
+                                      backgroundColor:
+                                          Color.fromARGB(255, 152, 245, 175),
+                                      shape: RoundedRectangleBorder(
+                                        borderRadius: BorderRadius.circular(14),
+                                      ),
+                                    ),
+                                    child: Container(
+                                      width: 60,
+                                      height: 80,
+                                      child: Image.asset(
+                                        'assets/icons/github1.png',
+                                      ),
+                                    ),
+                                  ),
+                                  SizedBox(width: 30),
+                                  ElevatedButton(
+                                    onPressed: () async {
+                                      await MyUrl.launchURL(
+                                          MyStrings.linkedinLink);
+                                    },
+                                    style: ElevatedButton.styleFrom(
+                                      backgroundColor:
+                                          Color.fromARGB(255, 152, 245, 175),
+                                      shape: RoundedRectangleBorder(
+                                        borderRadius: BorderRadius.circular(14),
+                                      ),
+                                    ),
+                                    child: Container(
+                                      width: 60,
+                                      height: 80,
+                                      child: Image.asset(
+                                        'assets/icons/linkedin1.png',
+                                      ),
+                                    ),
+                                  ),
+                                ],
                               ),
                             ],
                           ),
