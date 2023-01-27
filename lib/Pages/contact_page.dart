@@ -219,7 +219,7 @@ class WorksPage extends StatelessWidget {
                   children: [
                     Container(
                       width: double.infinity,
-                      height: 401,
+                      height: 390,
                       child: Column(
                         children: [
                           Text(
@@ -380,7 +380,7 @@ class WorksPage extends StatelessWidget {
                     ),
                     Container(
                       width: double.infinity,
-                      height: 295,
+                      height: 290,
                       child: Lottie.network(
                         'https://assets8.lottiefiles.com/packages/lf20_hokifDNfXn.json',
                         fit: BoxFit.contain,
