@@ -22,7 +22,7 @@ dependencies:
   shimmer: ^2.0.0
   lottie: ^2.2.0
   container_tab_indicator: ^0.3.0
-  flutter_awesome_buttons: ^1.1.0
+  vs_scrollbar: ^0.2.1
 
 flutter_native_splash:
   color: "#888e93"

@@ -134,14 +134,6 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
-  flutter_awesome_buttons:
-    dependency: "direct main"
-    description:
-      name: flutter_awesome_buttons
-      sha256: "9e3a5fdc0ed119847e6236dfe7c1869cae231c63bb6c19a854b45388bfa64837"
-      url: "https://pub.dev"
-    source: hosted
-    version: "1.1.0"
   flutter_native_splash:
     dependency: "direct dev"
     description:
@@ -501,6 +493,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.1.4"
+  vs_scrollbar:
+    dependency: "direct main"
+    description:
+      name: vs_scrollbar
+      sha256: "1c602b0a2d5cb8e1b025ee448c0a459af6786e4d1d5460f984666e81706dbce0"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.2.1"
   win32:
     dependency: transitive
     description:
