@@ -73,18 +73,34 @@ class AllPage extends StatelessWidget {
                         ),
                       ),
                       SizedBox(height: 25),
-                      ElevatedButton(
-                        style: ElevatedButton.styleFrom(
-                            fixedSize: Size(200, 50),
-                            backgroundColor: Colors.white),
-                        onPressed: () async {
-                          await MyUrl.launchURL(MyStrings.weatherNowLink);
-                        },
-                        child: Image.asset(
-                          'assets/icons/github_icon.png',
-                          height: 400,
-                          width: 400,
-                        ),
+                      Row(
+                        children: [
+                          SizedBox(width: 25),
+                          ElevatedButton(
+                            style: ElevatedButton.styleFrom(
+                                fixedSize: Size(200, 50),
+                                backgroundColor: Colors.white),
+                            onPressed: () async {
+                              await MyUrl.launchURL(MyStrings.weatherNowLink);
+                            },
+                            child: Image.asset(
+                              'assets/icons/github_icon.png',
+                              height: 400,
+                              width: 400,
+                            ),
+                          ),
+                          SizedBox(width: 35),
+                          ElevatedButton(
+                            style: ElevatedButton.styleFrom(
+                                padding: EdgeInsets.all(12),
+                                fixedSize: Size(200, 50),
+                                backgroundColor: Colors.white),
+                            onPressed: () {},
+                            child: Image.asset(
+                              'assets/icons/apk_icon.png',
+                            ),
+                          ),
+                        ],
                       ),
                       Padding(
                         padding: const EdgeInsets.only(left: 410),
@@ -163,18 +179,34 @@ class AllPage extends StatelessWidget {
                         ),
                       ),
                       SizedBox(height: 25),
-                      ElevatedButton(
-                        style: ElevatedButton.styleFrom(
-                            fixedSize: Size(200, 50),
-                            backgroundColor: Colors.white),
-                        onPressed: () async {
-                          await MyUrl.launchURL(MyStrings.mockShopLink);
-                        },
-                        child: Image.asset(
-                          'assets/icons/github_icon.png',
-                          height: 400,
-                          width: 400,
-                        ),
+                      Row(
+                        children: [
+                          SizedBox(width: 25),
+                          ElevatedButton(
+                            style: ElevatedButton.styleFrom(
+                                fixedSize: Size(200, 50),
+                                backgroundColor: Colors.white),
+                            onPressed: () async {
+                              await MyUrl.launchURL(MyStrings.mockShopLink);
+                            },
+                            child: Image.asset(
+                              'assets/icons/github_icon.png',
+                              height: 400,
+                              width: 400,
+                            ),
+                          ),
+                          SizedBox(width: 35),
+                          ElevatedButton(
+                            style: ElevatedButton.styleFrom(
+                                padding: EdgeInsets.all(12),
+                                fixedSize: Size(200, 50),
+                                backgroundColor: Colors.white),
+                            onPressed: () {},
+                            child: Image.asset(
+                              'assets/icons/apk_icon.png',
+                            ),
+                          ),
+                        ],
                       ),
                       Padding(
                         padding: const EdgeInsets.only(left: 410),
