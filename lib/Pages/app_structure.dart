@@ -1,9 +1,6 @@
-import 'dart:math';
-
 import 'package:animations/animations.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:my_portfolio/Models/my_colors.dart';
 import 'package:my_portfolio/Models/responsive_size.dart';
 import 'package:my_portfolio/Pages/contact_page.dart';
 import 'package:my_portfolio/Pages/home_page.dart';
@@ -18,7 +15,7 @@ class AppStructure extends StatefulWidget {
 
 class _AppStructureState extends State<AppStructure> {
   int _selectedTab = 1;
-  int _selectedBg = Random().nextInt(MyColors.bgColors.length);
+  Color homeColor = Color(0xff10505B);
 
   Widget _selectTabs() {
     if (_selectedTab == 1) {
@@ -38,7 +35,7 @@ class _AppStructureState extends State<AppStructure> {
 
     return Scaffold(
       //Backgroud Color
-      backgroundColor: MyColors.bgColors[_selectedBg],
+      backgroundColor: homeColor,
       body: Stack(
         children: [
           AnimatedContainer(
@@ -46,7 +43,7 @@ class _AppStructureState extends State<AppStructure> {
             curve: Curves.easeInBack,
             width: _width,
             height: _height,
-            color: MyColors.bgColors[_selectedBg],
+            color: homeColor,
             child: Align(
               alignment: Alignment.bottomCenter,
               child: Container(
@@ -62,8 +59,7 @@ class _AppStructureState extends State<AppStructure> {
                     Shimmer.fromColors(
                       period: Duration(seconds: 2),
                       baseColor: Colors.white,
-                      highlightColor:
-                          MyColors.bgColors[_selectedBg].withAlpha(200),
+                      highlightColor: homeColor.withAlpha(200),
                       child: Text(
                         "Built Using Flutter",
                         style: TextStyle(
@@ -135,8 +131,7 @@ class _AppStructureState extends State<AppStructure> {
                                     onPressed: () {
                                       setState(() {
                                         _selectedTab = 1;
-                                        _selectedBg = Random()
-                                            .nextInt(MyColors.bgColors.length);
+                                        homeColor = Color(0xff10505B);
                                       });
                                     },
                                     icon: Icon(
@@ -149,8 +144,7 @@ class _AppStructureState extends State<AppStructure> {
                                     onPressed: () {
                                       setState(() {
                                         _selectedTab = 4;
-                                        _selectedBg = Random()
-                                            .nextInt(MyColors.bgColors.length);
+                                        homeColor = Color(0xffC7C8CA);
                                       });
                                     },
                                     icon: Icon(
@@ -163,8 +157,8 @@ class _AppStructureState extends State<AppStructure> {
                                     onPressed: () {
                                       setState(() {
                                         _selectedTab = 2;
-                                        _selectedBg = Random()
-                                            .nextInt(MyColors.bgColors.length);
+                                        homeColor =
+                                            Color.fromARGB(255, 103, 3, 143);
                                       });
                                     },
                                     icon: Icon(
@@ -177,8 +171,8 @@ class _AppStructureState extends State<AppStructure> {
                                     onPressed: () {
                                       setState(() {
                                         _selectedTab = 3;
-                                        _selectedBg = Random()
-                                            .nextInt(MyColors.bgColors.length);
+                                        homeColor =
+                                            Color.fromARGB(224, 43, 153, 29);
                                       });
                                     },
                                     icon: Icon(
