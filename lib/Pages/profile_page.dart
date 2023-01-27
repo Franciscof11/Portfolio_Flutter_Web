@@ -40,21 +40,25 @@ class ProfilePage extends StatelessWidget {
                   ],
                 ),
               )
-            : SingleChildScrollView(
-                physics: BouncingScrollPhysics(),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Container(
-                        width: double.infinity,
-                        height: 400,
-                        child: ProfileImageSection()),
-                    SizedBox(
-                      height: 20,
-                    ),
-                    ProfileDetailsSection(
-                        contactButtons: MyStrings.contactButtons),
-                  ],
+            : ScrollConfiguration(
+                behavior:
+                    ScrollConfiguration.of(context).copyWith(scrollbars: false),
+                child: SingleChildScrollView(
+                  physics: BouncingScrollPhysics(),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Container(
+                          width: double.infinity,
+                          height: 400,
+                          child: ProfileImageSection()),
+                      SizedBox(
+                        height: 20,
+                      ),
+                      ProfileDetailsSection(
+                          contactButtons: MyStrings.contactButtons),
+                    ],
+                  ),
                 ),
               ),
       ),
