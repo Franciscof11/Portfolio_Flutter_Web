@@ -45,7 +45,6 @@ OBS: Responsive for mobile is still under construction due to waiting for update
   * Flutter Web
   * Dart
   * Lottie (For Animations)
-  * Animated Splash Screen
   
 ---
 
