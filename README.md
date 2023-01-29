@@ -26,7 +26,7 @@ OBS: Responsive for mobile is still under construction due to waiting for update
    <h2>Preview 📱</h2><br>
 
    <p a>
-   <img src="preview/preview1.gif" width="500" height="500" alt="App Preview"> 
+   <img src="preview/preview1.gif" width="600" height="400" alt="App Preview"> 
    </p>
 
 ---
@@ -35,7 +35,7 @@ OBS: Responsive for mobile is still under construction due to waiting for update
    Learnings 🤯
    </h2>
 
-    
+  In this project I had to study more deeply how flutter works in the web part, and about responsiveness. I also studied state management for the web and flutter web animations.
  
 ---
 
@@ -43,35 +43,11 @@ OBS: Responsive for mobile is still under construction due to waiting for update
    Technologies Used 👨🏽‍💻
    </h2>
    
-  * Flutter
+  * Flutter Web
   * Dart
-  * GetX (For State Management) 
-  * Dio (For API consuming) 
   * Lottie (For Animations)
   * Animated Splash Screen
-  * Flutter Launcher Icons
-  * Rest API (https://dummyjson.com/)
   
----
-
-   <h2>How to Use 🤔</h2>
-
-```
-- Clone this repository:
-$ git clone https://github.com/Franciscof11/Mock-Shop--Flutter.git MockShop
-
-- Enter in directory:
-$ cd MockShop
-
-- For install dependencies:
-$ flutter pub get
-
-- Connect your emulator or physical device
-
-- Run the app:
-$ flutter run
-```
-
 ---
 
 This project was developed by **[@Francisco Gabriel](https://www.linkedin.com/in/franciscossg/)**,
