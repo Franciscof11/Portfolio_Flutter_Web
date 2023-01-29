@@ -11,7 +11,6 @@
    - [Preview 📱](#preview-)
    - [Learnings 🤯](#---learnings----)
    - [Technologies Used 👨🏽‍💻](#---technologies-used----)
-   - [How to Use 🤔](#how-to-use-)
    </p>
 
    <h2>About 📖</h2>
