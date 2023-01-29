@@ -26,7 +26,7 @@ OBS: Responsive for mobile is still under construction due to waiting for update
    <h2>Preview 📱</h2><br>
 
    <p a>
-   <img src="preview/demo2.gif" width="400" height="800" alt="App Preview"> 
+   <img src="preview/preview1.gif" width="500" height="500" alt="App Preview"> 
    </p>
 
 ---
@@ -34,8 +34,8 @@ OBS: Responsive for mobile is still under construction due to waiting for update
  <h2>
    Learnings 🤯
    </h2>
-The development of this application made me study more deeply about api requests in flutter.animations and state management with GetX package.
-It also forced me to study more about client http , using the DIO package. I learned how to handle connection errors when querying the api.
+
+    
  
 ---
 
