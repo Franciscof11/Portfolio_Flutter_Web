@@ -71,21 +71,11 @@ class ProfileDetailsSection extends StatelessWidget {
               ),
               SizedBox(width: 20),
               Container(
-                height: 50,
-                width: 50,
+                height: 58,
+                width: 58,
                 decoration: BoxDecoration(
                   image: DecorationImage(
-                    image: AssetImage('assets/icons/kotlin.png'),
-                  ),
-                ),
-              ),
-              SizedBox(width: 20),
-              Container(
-                height: 50,
-                width: 50,
-                decoration: BoxDecoration(
-                  image: DecorationImage(
-                    image: AssetImage('assets/icons/java.png'),
+                    image: AssetImage('assets/icons/react.png'),
                   ),
                 ),
               ),
