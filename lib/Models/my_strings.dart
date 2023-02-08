@@ -5,7 +5,7 @@ class MyStrings {
 
   static final List<String> keywords = ["Develop", "Debug", "Deploy"];
 
-  static final String headLine = "Mobile Developer";
+  static final String headLine = "Full Stack Developer";
   static final String tagLine = "";
 
   static final List<String> homePageMainContents = [
@@ -15,7 +15,7 @@ class MyStrings {
   ];
 
   static final String myName = "Francisco Gabriel";
-  static final String myTagLine = "Mobile Developer";
+  static final String myTagLine = "Full Stack Developer";
   static final String myDescription =
       "Enthusiastic about the technological area related to programming and its entire ecosystem, I started my training with studies on native applications using Java and Koltin, as I have always identified myself with mobile development. After that I entered the world of hybrid development, perfecting myself in Flutter, as well as in Android Native, my main stack currently. My passion for programming and the IT area started in childhood, and since then I've been studying and working continuously to become a better professional.";
 
