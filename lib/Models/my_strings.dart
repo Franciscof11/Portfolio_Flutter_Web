@@ -31,7 +31,7 @@ class MyStrings {
   static final String portfolioLink =
       "https://github.com/Franciscof11/Portfolio--Flutter";
   static final String myResume =
-      "https://docs.google.com/document/d/1Ui_bfssTp0Yqb4X7-5rWfvpfEGLX5_0I-w6AWGxBiTk/edit?usp=share_link";
+      "https://docs.google.com/document/d/1Io_tNBZVscoF9AACmFomGTnoZsjDXJ69xhWMcgBJ3Do/edit?usp=share_link";
 
   static final List<Map<String, dynamic>> contactButtons = [
     {
