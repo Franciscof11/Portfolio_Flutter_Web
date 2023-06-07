@@ -46,6 +46,227 @@ class AllPage extends StatelessWidget {
                         SizedBox(width: 60),
                         Container(
                           width: 500,
+                          height: 510,
+                          child: Column(children: [
+                            SizedBox(height: 15),
+                            Lottie.network(
+                              'https://assets7.lottiefiles.com/packages/lf20_TMRZ23.json',
+                              width: 180,
+                              height: 180,
+                            ),
+                            Text(
+                              'Mock Shop',
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 25,
+                              ),
+                            ),
+                            SizedBox(height: 20),
+                            Container(
+                              child: Text(
+                                maxLines: 5,
+                                'App that simulates an online sales application, consuming the DummyJSON open source API (https://dummyjson.com/). The application allows us to explore the list of products that comes from the api, see the details of the products listed and simulates a shopping cart.',
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 18,
+                                  overflow: TextOverflow.ellipsis,
+                                ),
+                                textAlign: TextAlign.justify,
+                              ),
+                            ),
+                            SizedBox(height: 25),
+                            Row(
+                              children: [
+                                SizedBox(width: 25),
+                                ElevatedButton(
+                                  style: ElevatedButton.styleFrom(
+                                      fixedSize: Size(200, 50),
+                                      backgroundColor: Colors.white),
+                                  onPressed: () async {
+                                    await MyUrl.launchURL(
+                                        MyStrings.mockShopLink);
+                                  },
+                                  child: Image.asset(
+                                    'assets/icons/github_icon.png',
+                                    height: 400,
+                                    width: 400,
+                                  ),
+                                ),
+                                SizedBox(width: 35),
+                                ElevatedButton(
+                                  style: ElevatedButton.styleFrom(
+                                      padding: EdgeInsets.all(12),
+                                      fixedSize: Size(200, 50),
+                                      backgroundColor: Colors.white),
+                                  onPressed: () {},
+                                  child: Image.asset(
+                                    'assets/icons/apk_icon.png',
+                                  ),
+                                ),
+                              ],
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.only(left: 410),
+                              child: Column(
+                                mainAxisAlignment: MainAxisAlignment.end,
+                                crossAxisAlignment: CrossAxisAlignment.end,
+                                children: [
+                                  Container(
+                                    width: 120,
+                                    height: 60,
+                                    child: Padding(
+                                      padding: const EdgeInsets.only(top: 0),
+                                      child: Lottie.network(
+                                        'https://assets8.lottiefiles.com/packages/lf20_REyGrcDsYY.json',
+                                        fit: BoxFit.cover,
+                                        width: 100,
+                                        height: 100,
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ]),
+                        ),
+                        SizedBox(width: 50),
+                        Image.asset(
+                          'assets/icons/mock_shop.png',
+                          width: 450,
+                          height: 460,
+                        ),
+                      ],
+                    ),
+                  ),
+                  SizedBox(height: 50),
+                  //
+                  //
+                  //
+                  Container(
+                    width: 1200,
+                    height: 500,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(14),
+                      color: Colors.deepPurple[500],
+                    ),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        SizedBox(width: 60),
+                        Container(
+                          width: 500,
+                          height: 500,
+                          child: Column(children: [
+                            SizedBox(height: 15),
+                            Lottie.network(
+                              'https://assets7.lottiefiles.com/private_files/lf30_nIklgb.json',
+                              width: 300,
+                              height: 150,
+                              fit: BoxFit.none,
+                            ),
+                            SizedBox(height: 40),
+                            Text(
+                              'Right',
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 25,
+                              ),
+                            ),
+                            SizedBox(height: 20),
+                            Container(
+                              child: Text(
+                                maxLines: 5,
+                                'Right is a study aid application, using memory cards (flashcards) to learn content. With it, you can create your own cards, favorite the ones that interest you the most, receive reminders and interact with the user community.',
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 18,
+                                  overflow: TextOverflow.ellipsis,
+                                ),
+                                textAlign: TextAlign.justify,
+                              ),
+                            ),
+                            SizedBox(height: 24),
+                            Row(
+                              children: [
+                                SizedBox(width: 25),
+                                ElevatedButton(
+                                  style: ElevatedButton.styleFrom(
+                                      fixedSize: Size(200, 50),
+                                      backgroundColor: Colors.white),
+                                  onPressed: () async {
+                                    await MyUrl.launchURL(MyStrings.rightLink);
+                                  },
+                                  child: Image.asset(
+                                    'assets/icons/github_icon.png',
+                                    height: 400,
+                                    width: 400,
+                                  ),
+                                ),
+                                SizedBox(width: 35),
+                                ElevatedButton(
+                                  style: ElevatedButton.styleFrom(
+                                      padding: EdgeInsets.all(12),
+                                      fixedSize: Size(200, 50),
+                                      backgroundColor: Colors.white),
+                                  onPressed: () {},
+                                  child: Image.asset(
+                                    'assets/icons/apk_icon.png',
+                                  ),
+                                ),
+                              ],
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.only(left: 410),
+                              child: Column(
+                                mainAxisAlignment: MainAxisAlignment.end,
+                                crossAxisAlignment: CrossAxisAlignment.end,
+                                children: [
+                                  Container(
+                                    width: 120,
+                                    height: 80,
+                                    child: Padding(
+                                      padding: const EdgeInsets.only(top: 14),
+                                      child: Lottie.network(
+                                        'https://assets8.lottiefiles.com/packages/lf20_REyGrcDsYY.json',
+                                        fit: BoxFit.cover,
+                                        width: 100,
+                                        height: 100,
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ]),
+                        ),
+                        SizedBox(width: 50),
+                        Image.asset(
+                          'assets/icons/right_showup.png',
+                          width: 450,
+                          height: 460,
+                        ),
+                      ],
+                    ),
+                  ),
+                  SizedBox(height: 50),
+                  //
+                  //
+                  //
+                  Container(
+                    width: 1200,
+                    height: 500,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(14),
+                      color: Colors.deepPurple[500],
+                    ),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        SizedBox(width: 60),
+                        Container(
+                          width: 500,
                           height: 500,
                           child: Column(children: [
                             SizedBox(height: 15),
@@ -141,113 +362,9 @@ class AllPage extends StatelessWidget {
                     ),
                   ),
                   SizedBox(height: 50),
-                  Container(
-                    width: 1200,
-                    height: 500,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(14),
-                      color: Colors.deepPurple[500],
-                    ),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        SizedBox(width: 60),
-                        Container(
-                          width: 500,
-                          height: 510,
-                          child: Column(children: [
-                            SizedBox(height: 15),
-                            Lottie.network(
-                              'https://assets7.lottiefiles.com/packages/lf20_TMRZ23.json',
-                              width: 180,
-                              height: 180,
-                            ),
-                            Text(
-                              'Mock Shop',
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 25,
-                              ),
-                            ),
-                            SizedBox(height: 20),
-                            Container(
-                              child: Text(
-                                maxLines: 5,
-                                'App that simulates an online sales application, consuming the DummyJSON open source API (https://dummyjson.com/). The application allows us to explore the list of products that comes from the api, see the details of the products listed and simulates a shopping cart.',
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 18,
-                                  overflow: TextOverflow.ellipsis,
-                                ),
-                                textAlign: TextAlign.justify,
-                              ),
-                            ),
-                            SizedBox(height: 25),
-                            Row(
-                              children: [
-                                SizedBox(width: 25),
-                                ElevatedButton(
-                                  style: ElevatedButton.styleFrom(
-                                      fixedSize: Size(200, 50),
-                                      backgroundColor: Colors.white),
-                                  onPressed: () async {
-                                    await MyUrl.launchURL(
-                                        MyStrings.mockShopLink);
-                                  },
-                                  child: Image.asset(
-                                    'assets/icons/github_icon.png',
-                                    height: 400,
-                                    width: 400,
-                                  ),
-                                ),
-                                SizedBox(width: 35),
-                                ElevatedButton(
-                                  style: ElevatedButton.styleFrom(
-                                      padding: EdgeInsets.all(12),
-                                      fixedSize: Size(200, 50),
-                                      backgroundColor: Colors.white),
-                                  onPressed: () {},
-                                  child: Image.asset(
-                                    'assets/icons/apk_icon.png',
-                                  ),
-                                ),
-                              ],
-                            ),
-                            Padding(
-                              padding: const EdgeInsets.only(left: 410),
-                              child: Column(
-                                mainAxisAlignment: MainAxisAlignment.end,
-                                crossAxisAlignment: CrossAxisAlignment.end,
-                                children: [
-                                  Container(
-                                    width: 120,
-                                    height: 60,
-                                    child: Padding(
-                                      padding: const EdgeInsets.only(top: 0),
-                                      child: Lottie.network(
-                                        'https://assets8.lottiefiles.com/packages/lf20_REyGrcDsYY.json',
-                                        fit: BoxFit.cover,
-                                        width: 100,
-                                        height: 100,
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ]),
-                        ),
-                        SizedBox(width: 50),
-                        Image.asset(
-                          'assets/icons/mock_shop.png',
-                          width: 450,
-                          height: 460,
-                        ),
-                      ],
-                    ),
-                  ),
-                  SizedBox(height: 50),
+                  //
+                  //
+                  //
                   Container(
                     width: 1200,
                     height: 500,

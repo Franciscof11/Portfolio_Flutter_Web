@@ -67,7 +67,7 @@ class WorksPage extends StatelessWidget {
                                     ),
                                     SizedBox(width: 15),
                                     Text(
-                                      'Phone:  +55 (98) 99161-9987     ',
+                                      'Phone:  +55 (98) 98504-3843     ',
                                       style: TextStyle(
                                         fontSize: 22,
                                         color: Colors.black87,

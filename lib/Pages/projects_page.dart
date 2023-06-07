@@ -43,41 +43,10 @@ class SkillsPage extends StatelessWidget {
                           height: 564,
                           child: Column(
                             children: [
-                              Container(
-                                decoration: BoxDecoration(
-                                    borderRadius:
-                                        BorderRadius.all(Radius.circular(16))),
-                                width: 350,
-                                child: TabBar(
-                                  overlayColor: MaterialStatePropertyAll(
-                                      Colors.transparent),
-                                  onTap: (value) => {},
-                                  unselectedLabelColor: Colors.grey[800],
-                                  labelColor: Colors.deepPurple,
-                                  labelStyle: TextStyle(
-                                    fontSize: 24,
-                                    color: Colors.black87,
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                                  indicator: const ContainerTabIndicator(
-                                    height: 3,
-                                    padding: EdgeInsets.only(top: 20),
-                                    width: 40,
-                                    color: Colors.deepPurple,
-                                  ),
-                                  tabs: [
-                                    Text('All'),
-                                    Text('Flutter'),
-                                    Text('Kotlin'),
-                                  ],
-                                ),
-                              ),
                               SizedBox(height: 20),
                               Expanded(
                                 child: TabBarView(children: [
                                   AllPage(),
-                                  FlutterPage(),
-                                  KotlinPage(),
                                 ]),
                               )
                             ],
@@ -139,11 +108,7 @@ class SkillsPage extends StatelessWidget {
                                     width: 40,
                                     color: Colors.deepPurple,
                                   ),
-                                  tabs: [
-                                    Text('All'),
-                                    Text('Flutter'),
-                                    Text('Kotlin'),
-                                  ],
+                                  tabs: [],
                                 ),
                               ),
                               SizedBox(height: 20),

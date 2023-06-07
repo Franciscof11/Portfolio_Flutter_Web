@@ -75,7 +75,7 @@ class ProfileDetailsSection extends StatelessWidget {
                 width: 58,
                 decoration: BoxDecoration(
                   image: DecorationImage(
-                    image: AssetImage('assets/icons/react.png'),
+                    image: AssetImage('assets/icons/dart.png'),
                   ),
                 ),
               ),

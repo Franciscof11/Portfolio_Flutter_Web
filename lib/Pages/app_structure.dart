@@ -61,7 +61,7 @@ class _AppStructureState extends State<AppStructure> {
                       baseColor: Colors.white,
                       highlightColor: homeColor.withAlpha(200),
                       child: Text(
-                        "Built Using Flutter",
+                        "Built Using Flutter Web",
                         style: TextStyle(
                           fontWeight: FontWeight.w900,
                           wordSpacing: 2,

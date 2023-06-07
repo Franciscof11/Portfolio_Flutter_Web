@@ -1,10 +1,10 @@
-final String _worksPath = "assets/images/works";
+final String _worksPath = "assets/imgs/works";
 
 class MyImages {
   MyImages._();
 
-  static final String myProfileImage = "assets/images/profile.jpg";
-  static final String loveImage = "assets/images/love.png";
+  static final String myProfileImage = "assets/imgs/profile.jpg";
+  static final String loveImage = "assets/imgs/love.png";
 
   static final List<String> bmi = [
     for (var i = 0; i < 2; i++) "$_worksPath/bmi${i + 1}.jpg",

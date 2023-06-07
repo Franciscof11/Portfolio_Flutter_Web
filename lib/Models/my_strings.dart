@@ -5,7 +5,7 @@ class MyStrings {
 
   static final List<String> keywords = ["Develop", "Debug", "Deploy"];
 
-  static final String headLine = "Full Stack Developer";
+  static final String headLine = "Flutter Developer";
   static final String tagLine = "";
 
   static final List<String> homePageMainContents = [
@@ -15,9 +15,9 @@ class MyStrings {
   ];
 
   static final String myName = "Francisco Gabriel";
-  static final String myTagLine = "Full Stack Developer";
+  static final String myTagLine = "Flutter Developer";
   static final String myDescription =
-      "Enthusiastic about the technological area related to programming and its entire ecosystem, I started my training with studies on native applications using Java and Koltin, as I have always identified myself with mobile development. After that I entered the world of hybrid development, perfecting myself in Flutter, as well as in Android Native, my main stack currently. My passion for programming and the IT area started in childhood, and since then I've been studying and working continuously to become a better professional.";
+      "Enthusiastic about the technological area linked to programming and its entire ecosystem, I started my training with studies on native applications using Java and Koltin, because I always identified with mobile development. After that I entered the world of hybrid development, perfecting in Flutter and Dart, my main stack currently. I am currently improving to become a better professional.";
 
   static final String myGithub = "Franciscof11";
   static final String githubLink = "https://github.com/Franciscof11";
@@ -26,6 +26,7 @@ class MyStrings {
   static final String whats = "https://contate.me/Franciscof11";
   static final String weatherNowLink =
       "https://github.com/Franciscof11/WeatherNow--Flutter";
+  static final String rightLink = "https://github.com/Franciscof11/right";
   static final String mockShopLink =
       "https://github.com/Franciscof11/Mock-Shop--Flutter";
   static final String portfolioLink =
