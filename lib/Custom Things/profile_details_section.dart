@@ -51,7 +51,7 @@ class ProfileDetailsSection extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
               Text(
-                'Tecnologies : ',
+                'Tecnologias : ',
                 style: TextStyle(
                   height: 1.6,
                   fontSize: 19,
@@ -71,8 +71,8 @@ class ProfileDetailsSection extends StatelessWidget {
               ),
               SizedBox(width: 20),
               Container(
-                height: 58,
-                width: 58,
+                height: 50,
+                width: 50,
                 decoration: BoxDecoration(
                   image: DecorationImage(
                     image: AssetImage('assets/icons/dart.png'),
@@ -82,22 +82,25 @@ class ProfileDetailsSection extends StatelessWidget {
             ],
           ),
           SizedBox(height: 45),
-          ElevatedButton(
-            style: ButtonStyle(
-              padding: MaterialStateProperty.all(
-                  EdgeInsets.symmetric(horizontal: 40, vertical: 20)),
-              backgroundColor: MaterialStateProperty.all(
-                Colors.blueGrey[700],
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 80),
+            child: ElevatedButton(
+              style: ButtonStyle(
+                padding: MaterialStateProperty.all(
+                    EdgeInsets.symmetric(horizontal: 40, vertical: 20)),
+                backgroundColor: MaterialStateProperty.all(
+                  Colors.blueGrey[700],
+                ),
               ),
-            ),
-            onPressed: () async {
-              await MyUrl.launchURL(MyStrings.myResume);
-            },
-            child: Text(
-              "My Resume",
-              style: TextStyle(
-                fontSize: 16,
-                fontWeight: FontWeight.bold,
+              onPressed: () async {
+                await MyUrl.launchURL(MyStrings.myResume);
+              },
+              child: Text(
+                "Meu Currículo",
+                style: TextStyle(
+                  fontSize: 16,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
             ),
           ),

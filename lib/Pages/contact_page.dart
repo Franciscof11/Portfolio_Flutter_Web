@@ -23,7 +23,7 @@ class WorksPage extends StatelessWidget {
                   children: [
                     SizedBox(height: 4),
                     Text(
-                      'Contact Me',
+                      'Contatos',
                       style: TextStyle(
                         fontSize: 50,
                         color: Colors.black87,
@@ -43,7 +43,7 @@ class WorksPage extends StatelessWidget {
                             children: [
                               SizedBox(height: 20),
                               Text(
-                                'Send a message!',
+                                'Mande uma mensagem!',
                                 style: TextStyle(
                                   fontSize: 25,
                                   color: Colors.black87,
@@ -59,21 +59,40 @@ class WorksPage extends StatelessWidget {
                                     borderRadius: BorderRadius.circular(14)),
                                 child: Row(
                                   mainAxisAlignment: MainAxisAlignment.center,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
                                   children: [
                                     Image.asset(
-                                      'assets/icons/phone.png',
+                                      'assets/icons/whatsapp.png',
                                       width: 35,
                                       height: 35,
                                     ),
                                     SizedBox(width: 15),
                                     Text(
-                                      'Phone:  +55 (98) 98504-3843     ',
+                                      'WhatsApp:',
                                       style: TextStyle(
                                         fontSize: 22,
                                         color: Colors.black87,
                                         fontWeight: FontWeight.bold,
                                       ),
                                     ),
+                                    SizedBox(width: 15),
+                                    ElevatedButton(
+                                      onPressed: () async {
+                                        await MyUrl.launchURL(MyStrings.whats);
+                                      },
+                                      child: Text(
+                                        'Clique Aqui',
+                                        style: TextStyle(
+                                          fontSize: 17,
+                                          color: Colors.black87,
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
+                                      style: ElevatedButton.styleFrom(
+                                        backgroundColor: Colors.white,
+                                        minimumSize: Size(190, 50),
+                                      ),
+                                    )
                                   ],
                                 ),
                               ),
@@ -113,40 +132,21 @@ class WorksPage extends StatelessWidget {
                                     borderRadius: BorderRadius.circular(14)),
                                 child: Row(
                                   mainAxisAlignment: MainAxisAlignment.center,
-                                  crossAxisAlignment: CrossAxisAlignment.center,
                                   children: [
                                     Image.asset(
-                                      'assets/icons/whatsapp.png',
+                                      'assets/icons/phone.png',
                                       width: 35,
                                       height: 35,
                                     ),
                                     SizedBox(width: 15),
                                     Text(
-                                      'WhatsApp:',
+                                      '+55 (98) 98504-3843                        ',
                                       style: TextStyle(
                                         fontSize: 22,
                                         color: Colors.black87,
                                         fontWeight: FontWeight.bold,
                                       ),
                                     ),
-                                    SizedBox(width: 15),
-                                    ElevatedButton(
-                                      onPressed: () async {
-                                        await MyUrl.launchURL(MyStrings.whats);
-                                      },
-                                      child: Text(
-                                        'Click Here',
-                                        style: TextStyle(
-                                          fontSize: 17,
-                                          color: Colors.black87,
-                                          fontWeight: FontWeight.bold,
-                                        ),
-                                      ),
-                                      style: ElevatedButton.styleFrom(
-                                        backgroundColor: Colors.white,
-                                        minimumSize: Size(190, 50),
-                                      ),
-                                    )
                                   ],
                                 ),
                               ),

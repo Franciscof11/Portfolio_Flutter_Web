@@ -61,7 +61,7 @@ class _AppStructureState extends State<AppStructure> {
                       baseColor: Colors.white,
                       highlightColor: homeColor.withAlpha(200),
                       child: Text(
-                        "Built Using Flutter Web",
+                        "Desenvolvido utilizando Flutter Web",
                         style: TextStyle(
                           fontWeight: FontWeight.w900,
                           wordSpacing: 2,
@@ -140,7 +140,7 @@ class _AppStructureState extends State<AppStructure> {
                                     ),
                                   ),
                                   IconButton(
-                                    tooltip: "About me",
+                                    tooltip: "Sobre mim",
                                     onPressed: () {
                                       setState(() {
                                         _selectedTab = 4;
@@ -153,7 +153,7 @@ class _AppStructureState extends State<AppStructure> {
                                     ),
                                   ),
                                   IconButton(
-                                    tooltip: "Projects",
+                                    tooltip: "Projetos",
                                     onPressed: () {
                                       setState(() {
                                         _selectedTab = 2;
@@ -167,7 +167,7 @@ class _AppStructureState extends State<AppStructure> {
                                     ),
                                   ),
                                   IconButton(
-                                    tooltip: "Contact",
+                                    tooltip: "Contato",
                                     onPressed: () {
                                       setState(() {
                                         _selectedTab = 3;
