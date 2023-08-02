@@ -87,14 +87,23 @@ class _AppStructureState extends State<AppStructure> {
                             : const EdgeInsets.symmetric(
                                 horizontal: 25, vertical: 40)))),
             child: _height >= 540
-                ? Card(
-                    color: Colors.white,
-                    shape: ContinuousRectangleBorder(
-                        borderRadius: BorderRadius.circular(30)),
-                    elevation: 20,
-                    borderOnForeground: true,
-                    child: Padding(
-                      padding: const EdgeInsets.all(2.0),
+                ? Container(
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(30),
+                      border: Border.symmetric(
+                        vertical: BorderSide(
+                          color: Colors.black,
+                          width: 65,
+                        ),
+                        horizontal: BorderSide(
+                          color: Colors.black,
+                          width: 25,
+                        ),
+                      ),
+                    ),
+                    child: Container(
+                      padding: EdgeInsets.only(top: 30),
+                      color: Colors.white,
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [

@@ -1,5 +1,6 @@
 import 'package:container_tab_indicator/container_tab_indicator.dart';
 import 'package:flutter/material.dart';
+import 'package:my_portfolio/Custom%20Things/remove_glow_effet.dart';
 
 import '../Models/responsive_size.dart';
 import 'projects_pages/all_page.dart';
@@ -19,43 +20,47 @@ class SkillsPage extends StatelessWidget {
           ? Container(
               width: MediaQuery.of(context).size.width,
               height: MediaQuery.of(context).size.height,
-              child: Column(
-                children: [
-                  SizedBox(height: 20),
-                  Text(
-                    'Projects',
-                    style: TextStyle(
-                      fontSize: 50,
-                      color: Colors.black87,
-                      fontWeight: FontWeight.bold,
-                    ),
+              child: RemoveGlowEffect(
+                child: SingleChildScrollView(
+                  child: Column(
+                    children: [
+                      SizedBox(height: 20),
+                      Text(
+                        'Projects',
+                        style: TextStyle(
+                          fontSize: 50,
+                          color: Colors.black87,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      SizedBox(height: 20),
+                      DefaultTabController(
+                        length: 3,
+                        child: Column(
+                          children: [
+                            Container(
+                              decoration: BoxDecoration(
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(16))),
+                              width: 1200,
+                              height: 564,
+                              child: Column(
+                                children: [
+                                  SizedBox(height: 20),
+                                  Expanded(
+                                    child: TabBarView(children: [
+                                      AllPage(),
+                                    ]),
+                                  )
+                                ],
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
+                    ],
                   ),
-                  SizedBox(height: 20),
-                  DefaultTabController(
-                    length: 3,
-                    child: Column(
-                      children: [
-                        Container(
-                          decoration: BoxDecoration(
-                              borderRadius:
-                                  BorderRadius.all(Radius.circular(16))),
-                          width: 1200,
-                          height: 564,
-                          child: Column(
-                            children: [
-                              SizedBox(height: 20),
-                              Expanded(
-                                child: TabBarView(children: [
-                                  AllPage(),
-                                ]),
-                              )
-                            ],
-                          ),
-                        )
-                      ],
-                    ),
-                  ),
-                ],
+                ),
               ),
             )
           :
