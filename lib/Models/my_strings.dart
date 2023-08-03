@@ -31,6 +31,8 @@ class MyStrings {
       "https://github.com/Franciscof11/Mock-Shop--Flutter";
   static final String portfolioLink =
       "https://github.com/Franciscof11/Portfolio--Flutter";
+  static final String academicoLink =
+      "https://github.com/Franciscof11/Acad-mico-CLI";
   static final String myResume =
       "https://docs.google.com/document/d/1Io_tNBZVscoF9AACmFomGTnoZsjDXJ69xhWMcgBJ3Do/edit?usp=share_link";
 

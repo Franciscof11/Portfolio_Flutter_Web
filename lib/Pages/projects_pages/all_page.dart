@@ -362,7 +362,7 @@ class AllPage extends StatelessWidget {
                             ),
                             SizedBox(height: 20),
                             Text(
-                              'Portfolio WebApp',
+                              'Portfolio Web App',
                               style: TextStyle(
                                 color: Colors.white,
                                 fontSize: 25,
@@ -424,6 +424,77 @@ class AllPage extends StatelessWidget {
                           'assets/icons/portfolio.png',
                           width: 450,
                           height: 460,
+                        ),
+                      ],
+                    ),
+                  ),
+                  SizedBox(height: 50),
+                  //
+                  //
+                  //
+                  Container(
+                    width: 1200,
+                    height: 500,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(14),
+                      color: Colors.deepPurple[500],
+                    ),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        SizedBox(width: 60),
+                        Container(
+                          width: 500,
+                          height: 500,
+                          child: Column(children: [
+                            Lottie.network(
+                              'https://lottie.host/7ea884c8-0f98-44fa-a917-7faa02881f17/GFE7dypMT0.json',
+                              width: 450,
+                              height: 250,
+                              fit: BoxFit.fill,
+                            ),
+                            Text(
+                              'Acadêmico CLI',
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 25,
+                              ),
+                            ),
+                            SizedBox(height: 20),
+                            Container(
+                              child: Text(
+                                maxLines: 5,
+                                'O Acadêmico CLI consiste em uma CLI (Command Line Interface) que simula um gerenciamento acadêmico de estudantes , alunos e cursos. Nele é possível fazer todas as operações de um crud (Ler, Criar , Deletar , Editar dados).',
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 18,
+                                  overflow: TextOverflow.ellipsis,
+                                ),
+                                textAlign: TextAlign.justify,
+                              ),
+                            ),
+                            SizedBox(height: 25),
+                            ElevatedButton(
+                              style: ElevatedButton.styleFrom(
+                                  fixedSize: Size(200, 50),
+                                  backgroundColor: Colors.white),
+                              onPressed: () async {
+                                await MyUrl.launchURL(MyStrings.academicoLink);
+                              },
+                              child: Image.asset(
+                                'assets/icons/github_icon.png',
+                                height: 400,
+                                width: 400,
+                              ),
+                            ),
+                          ]),
+                        ),
+                        SizedBox(width: 50),
+                        Image.asset(
+                          'assets/icons/acad.png',
+                          width: 350,
+                          height: 360,
                         ),
                       ],
                     ),
