@@ -270,7 +270,7 @@ class AllPage extends StatelessWidget {
                             Container(
                               child: Text(
                                 maxLines: 5,
-                                'Um aplicativo de previsão do tempo. O aplicativo nos mostra a temperatura atual (em graus Celsius) do local escolhido e também nos informa sobre as próximas previsões do tempo. O aplicativo consome a API de código aberto WeatherApi (https://www.weatherapi.com/).',
+                                'Um aplicativo de previsão do tempo. O aplicativo nos mostra a temperatura atual do local escolhido e também nos informa sobre a previsão do tempo. O aplicativo consome a API de código aberto WeatherApi (https://www.weatherapi.com/), utilizando o Riverpod como gerenciador de estado.',
                                 style: TextStyle(
                                   color: Colors.white,
                                   fontSize: 18,
