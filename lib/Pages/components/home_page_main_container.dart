@@ -34,17 +34,18 @@ class HomePageMainContainer extends StatelessWidget {
               child: AnimatedTextKit(
                 animatedTexts: MyStrings.homePageMainContents
                     .map(
-                      (text) => FadeAnimatedText(
+                      (text) => TypewriterAnimatedText(
                         text,
-                        textStyle: TextStyle(
+                        textStyle: GoogleFonts.raleway(
+                          color: Color.fromARGB(255, 11, 56, 65),
                           wordSpacing: 2,
                         ),
                         textAlign: TextAlign.center,
-                        duration: Duration(milliseconds: 1800),
                       ),
                     )
                     .toList(),
                 repeatForever: true,
+                pause: const Duration(milliseconds: 1000),
               ),
             ),
           ),

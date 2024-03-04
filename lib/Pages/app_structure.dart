@@ -1,6 +1,7 @@
 import 'package:animations/animations.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:my_portfolio/Models/responsive_size.dart';
 import 'package:my_portfolio/Pages/contact_page.dart';
 import 'package:my_portfolio/Pages/home_page.dart';
@@ -47,9 +48,7 @@ class _AppStructureState extends State<AppStructure> {
             child: Align(
               alignment: Alignment.bottomCenter,
               child: Container(
-                padding: _width >= ResponsiveSize.tabWidth
-                    ? EdgeInsets.only(bottom: 25)
-                    : EdgeInsets.only(bottom: 10),
+                padding: _width >= ResponsiveSize.tabWidth ? EdgeInsets.only(bottom: 25) : EdgeInsets.only(bottom: 10),
                 width: double.infinity,
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -62,8 +61,9 @@ class _AppStructureState extends State<AppStructure> {
                       highlightColor: homeColor.withAlpha(200),
                       child: Text(
                         "Desenvolvido utilizando Flutter Web",
-                        style: TextStyle(
-                          fontWeight: FontWeight.w900,
+                        style: GoogleFonts.raleway(
+                          fontWeight: FontWeight.w700,
+                          fontSize: 15,
                           wordSpacing: 2,
                         ),
                       ),
@@ -79,13 +79,10 @@ class _AppStructureState extends State<AppStructure> {
                 : (_width >= ResponsiveSize.hdWidth
                     ? const EdgeInsets.symmetric(horizontal: 160, vertical: 80)
                     : (_width >= ResponsiveSize.normalWidth
-                        ? const EdgeInsets.symmetric(
-                            horizontal: 120, vertical: 80)
+                        ? const EdgeInsets.symmetric(horizontal: 120, vertical: 80)
                         : (_width >= ResponsiveSize.tabWidth
-                            ? const EdgeInsets.symmetric(
-                                horizontal: 60, vertical: 60)
-                            : const EdgeInsets.symmetric(
-                                horizontal: 25, vertical: 40)))),
+                            ? const EdgeInsets.symmetric(horizontal: 60, vertical: 60)
+                            : const EdgeInsets.symmetric(horizontal: 25, vertical: 40)))),
             child: _height >= 540
                 ? Container(
                     decoration: BoxDecoration(
@@ -111,9 +108,7 @@ class _AppStructureState extends State<AppStructure> {
                             // child: _selectTabs(),
                             child: PageTransitionSwitcher(
                               duration: Duration(seconds: 1),
-                              transitionBuilder: (child, primaryAnimation,
-                                      secondaryAnimation) =>
-                                  FadeThroughTransition(
+                              transitionBuilder: (child, primaryAnimation, secondaryAnimation) => FadeThroughTransition(
                                 fillColor: Colors.transparent,
                                 animation: primaryAnimation,
                                 secondaryAnimation: secondaryAnimation,
@@ -123,16 +118,12 @@ class _AppStructureState extends State<AppStructure> {
                             ),
                           ),
                           Container(
-                            height: _height >= ResponsiveSize.tabHeight
-                                ? _height * 0.09
-                                : _height * 0.12,
-                            width:
-                                _width >= ResponsiveSize.tabWidth ? 300 : null,
+                            height: _height >= ResponsiveSize.tabHeight ? _height * 0.09 : _height * 0.12,
+                            width: _width >= ResponsiveSize.tabWidth ? 300 : null,
                             child: Padding(
                               padding: const EdgeInsets.all(8.0),
                               child: Row(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceEvenly,
+                                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                 crossAxisAlignment: CrossAxisAlignment.center,
                                 children: [
                                   IconButton(
@@ -166,8 +157,7 @@ class _AppStructureState extends State<AppStructure> {
                                     onPressed: () {
                                       setState(() {
                                         _selectedTab = 2;
-                                        homeColor =
-                                            Color.fromARGB(255, 103, 3, 143);
+                                        homeColor = Color.fromARGB(255, 103, 3, 143);
                                       });
                                     },
                                     icon: Icon(
@@ -180,8 +170,7 @@ class _AppStructureState extends State<AppStructure> {
                                     onPressed: () {
                                       setState(() {
                                         _selectedTab = 3;
-                                        homeColor =
-                                            Color.fromARGB(224, 43, 153, 29);
+                                        homeColor = Color.fromARGB(224, 43, 153, 29);
                                       });
                                     },
                                     icon: Icon(
@@ -200,7 +189,7 @@ class _AppStructureState extends State<AppStructure> {
                 : Container(
                     child: Center(
                       child: Text(
-                        "Not available at this aspect ratio!",
+                        "Não disponível nesta proporção!",
                         textAlign: TextAlign.center,
                         style: TextStyle(
                           color: Colors.white,

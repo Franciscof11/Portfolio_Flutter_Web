@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:lottie/lottie.dart';
 import 'package:my_portfolio/Models/responsive_size.dart';
 import 'package:my_portfolio/Pages/components/heading_text.dart';
 import 'package:my_portfolio/Pages/components/home_page_main_container.dart';
-import 'package:my_portfolio/Pages/components/typewriter_animated_text.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -19,20 +19,20 @@ class HomePage extends StatelessWidget {
           children: [
             _width >= ResponsiveSize.tabWidth
                 ? Row(
-                    mainAxisSize: MainAxisSize.max,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       HeadingText(
                         responsivePadding: _responsivePadding,
                       ),
-                      Expanded(
-                        child: Align(
-                          alignment: Alignment.topRight,
-                          child: Padding(
-                            padding: EdgeInsets.symmetric(
-                                horizontal: _responsivePadding, vertical: 30),
-                            child: TypewriterAnimatedTextHome(),
+                      Align(
+                        alignment: Alignment.topRight,
+                        child: Padding(
+                          padding: EdgeInsets.symmetric(horizontal: _responsivePadding, vertical: 0),
+                          child: LottieBuilder.asset(
+                            'assets/icons/home_2.json',
+                            width: 120,
+                            height: 120,
                           ),
                         ),
                       ),
@@ -50,7 +50,11 @@ class HomePage extends StatelessWidget {
                           padding: EdgeInsets.symmetric(
                             horizontal: _responsivePadding,
                           ),
-                          child: TypewriterAnimatedTextHome(),
+                          child: LottieBuilder.asset(
+                            'assets/icons/home_animation.json',
+                            width: 200,
+                            height: 200,
+                          ),
                         ),
                       ),
                     ],

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:my_portfolio/Models/my_strings.dart';
 
 class HeadingText extends StatelessWidget {
@@ -11,27 +12,14 @@ class HeadingText extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.symmetric(horizontal: responsivePadding, vertical: 0),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Text(
-            MyStrings.headLine,
-            style: TextStyle(
-              color: Colors.black87,
-              fontSize: 32,
-              fontWeight: FontWeight.bold,
-            ),
-          ),
-          Text(
-            MyStrings.tagLine.toUpperCase(),
-            style: TextStyle(
-              color: Colors.black54,
-              fontSize: 14,
-              fontWeight: FontWeight.bold,
-            ),
-          ),
-        ],
+      padding: EdgeInsets.only(left: responsivePadding),
+      child: Text(
+        MyStrings.headLine,
+        style: GoogleFonts.raleway(
+          color: Colors.black87,
+          fontSize: 32,
+          fontWeight: FontWeight.w600,
+        ),
       ),
     );
   }
