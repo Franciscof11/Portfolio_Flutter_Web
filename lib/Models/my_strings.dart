@@ -15,7 +15,7 @@ class MyStrings {
   ];
 
   static final String myName = "Francisco Gabriel";
-  static final String myTagLine = "Desenvolvedor Flutter";
+  static final String myTagLine = "Desenvolvedor Mobile";
   static final String myDescription =
       "Entusiasta pela área tecnológica ligada à programação e todo o seu ecossistema, iniciei minha formação com estudos sobre aplicativos nativos utilizando Java e Koltin, pois sempre me identifiquei com o desenvolvimento mobile. Após isso entrei no mundo do desenvolvimento híbrido, me aperfeiçoando em Flutter e Dart, minha stack principal atualmente. Atualmente sigo me aperfeiçoando para me tornar um profissional melhor.";
 
@@ -28,7 +28,7 @@ class MyStrings {
   static final String mockShopLink = "https://github.com/Franciscof11/Mock-Shop--Flutter";
   static final String portfolioLink = "https://github.com/Franciscof11/Portfolio--Flutter";
   static final String academicoLink = "https://github.com/Franciscof11/Acad-mico-CLI";
-  static final String myResume = "https://docs.google.com/document/d/1Io_tNBZVscoF9AACmFomGTnoZsjDXJ69xhWMcgBJ3Do/edit?usp=share_link";
+  static final String myResume = "https://docs.google.com/document/d/1Io_tNBZVscoF9AACmFomGTnoZsjDXJ69xhWMcgBJ3Do/edit?usp=sharing";
 
   static final List<Map<String, dynamic>> contactButtons = [
     {

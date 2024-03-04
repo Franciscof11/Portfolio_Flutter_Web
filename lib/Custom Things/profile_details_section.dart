@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:my_portfolio/Models/launch_url.dart';
 import 'package:my_portfolio/Models/my_strings.dart';
 
@@ -20,7 +21,7 @@ class ProfileDetailsSection extends StatelessWidget {
         children: [
           Text(
             MyStrings.myName,
-            style: TextStyle(
+            style: GoogleFonts.raleway(
               fontSize: 40,
               color: Colors.black87,
               fontWeight: FontWeight.bold,
@@ -28,7 +29,7 @@ class ProfileDetailsSection extends StatelessWidget {
           ),
           Text(
             MyStrings.myTagLine,
-            style: TextStyle(
+            style: GoogleFonts.raleway(
               fontSize: 18,
               color: Colors.black54,
               fontWeight: FontWeight.bold,
@@ -39,7 +40,7 @@ class ProfileDetailsSection extends StatelessWidget {
           ),
           Text(
             MyStrings.myDescription,
-            style: TextStyle(
+            style: GoogleFonts.raleway(
               height: 1.6,
               fontSize: 19,
               color: Colors.black87,
@@ -52,7 +53,7 @@ class ProfileDetailsSection extends StatelessWidget {
             children: [
               Text(
                 'Tecnologias : ',
-                style: TextStyle(
+                style: GoogleFonts.raleway(
                   height: 1.6,
                   fontSize: 19,
                   color: Colors.black87,
@@ -86,8 +87,7 @@ class ProfileDetailsSection extends StatelessWidget {
             padding: const EdgeInsets.symmetric(horizontal: 80),
             child: ElevatedButton(
               style: ButtonStyle(
-                padding: MaterialStateProperty.all(
-                    EdgeInsets.symmetric(horizontal: 40, vertical: 20)),
+                padding: MaterialStateProperty.all(EdgeInsets.symmetric(horizontal: 40, vertical: 20)),
                 backgroundColor: MaterialStateProperty.all(
                   Colors.blueGrey[700],
                 ),
@@ -97,7 +97,8 @@ class ProfileDetailsSection extends StatelessWidget {
               },
               child: Text(
                 "Meu Currículo",
-                style: TextStyle(
+                style: GoogleFonts.raleway(
+                  color: Colors.white,
                   fontSize: 16,
                   fontWeight: FontWeight.bold,
                 ),

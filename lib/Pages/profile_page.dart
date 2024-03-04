@@ -12,20 +12,22 @@ class ProfilePage extends StatelessWidget {
 
     return Container(
       child: Padding(
-        padding:
-            EdgeInsets.symmetric(horizontal: _responsivePadding, vertical: 20),
+        padding: EdgeInsets.symmetric(horizontal: _responsivePadding, vertical: 20),
         child: _width >= ResponsiveSize.tabWidth
             ? Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 30),
+                padding: const EdgeInsets.symmetric(horizontal: 20),
                 child: Row(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Expanded(
                       flex: 1,
-                      child: SingleChildScrollView(
+                      child: ScrollConfiguration(
+                        behavior: ScrollConfiguration.of(context).copyWith(scrollbars: false),
+                        child: SingleChildScrollView(
                           physics: BouncingScrollPhysics(),
-                          child: ProfileDetailsSection(
-                              contactButtons: MyStrings.contactButtons)),
+                          child: ProfileDetailsSection(contactButtons: MyStrings.contactButtons),
+                        ),
+                      ),
                     ),
                     SizedBox(
                       width: 50,
@@ -34,29 +36,27 @@ class ProfilePage extends StatelessWidget {
                       flex: 1,
                       child: Padding(
                         padding: const EdgeInsets.only(left: 16),
-                        child: ProfileImageSection(),
+                        child: Padding(
+                          padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 50),
+                          child: ProfileImageSection(),
+                        ),
                       ),
                     )
                   ],
                 ),
               )
             : ScrollConfiguration(
-                behavior:
-                    ScrollConfiguration.of(context).copyWith(scrollbars: false),
+                behavior: ScrollConfiguration.of(context).copyWith(scrollbars: false),
                 child: SingleChildScrollView(
                   physics: BouncingScrollPhysics(),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Container(
-                          width: double.infinity,
-                          height: 400,
-                          child: ProfileImageSection()),
+                      Container(width: double.infinity, height: 400, child: ProfileImageSection()),
                       SizedBox(
                         height: 20,
                       ),
-                      ProfileDetailsSection(
-                          contactButtons: MyStrings.contactButtons),
+                      ProfileDetailsSection(contactButtons: MyStrings.contactButtons),
                     ],
                   ),
                 ),
