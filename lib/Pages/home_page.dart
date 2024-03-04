@@ -13,54 +13,59 @@ class HomePage extends StatelessWidget {
     return Container(
       child: SingleChildScrollView(
         physics: BouncingScrollPhysics(),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          mainAxisAlignment: MainAxisAlignment.start,
-          children: [
-            _width >= ResponsiveSize.tabWidth
-                ? Row(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      HeadingText(
-                        responsivePadding: _responsivePadding,
-                      ),
-                      Align(
-                        alignment: Alignment.topRight,
-                        child: Padding(
-                          padding: EdgeInsets.symmetric(horizontal: _responsivePadding, vertical: 0),
-                          child: LottieBuilder.asset(
-                            'assets/icons/home_2.json',
-                            width: 120,
-                            height: 120,
+        child: Align(
+          alignment: Alignment.topCenter,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: [
+              _width >= ResponsiveSize.tabWidth
+                  ? Row(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        HeadingText(
+                          responsivePadding: _responsivePadding,
+                        ),
+                        Align(
+                          alignment: Alignment.topRight,
+                          child: Padding(
+                            padding: EdgeInsets.symmetric(horizontal: _responsivePadding, vertical: 0),
+                            child: LottieBuilder.asset(
+                              'assets/icons/home_2.json',
+                              width: 120,
+                              height: 120,
+                            ),
                           ),
                         ),
-                      ),
-                    ],
-                  )
-                : Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      HeadingText(
-                        responsivePadding: _responsivePadding,
-                      ),
-                      Align(
-                        alignment: Alignment.topLeft,
-                        child: Padding(
-                          padding: EdgeInsets.symmetric(
-                            horizontal: _responsivePadding,
-                          ),
-                          child: LottieBuilder.asset(
-                            'assets/icons/home_animation.json',
-                            width: 200,
-                            height: 200,
+                      ],
+                    )
+                  : Column(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Align(
+                          alignment: Alignment.topCenter,
+                          child: HeadingText(
+                            responsivePadding: _responsivePadding,
                           ),
                         ),
-                      ),
-                    ],
-                  ),
-            HomePageMainContainer(height: _height, width: _width),
-          ],
+                        Align(
+                          alignment: Alignment.center,
+                          child: Padding(
+                            padding: EdgeInsets.symmetric(horizontal: 0, vertical: 0),
+                            child: LottieBuilder.asset(
+                              'assets/icons/home_2.json',
+                              width: 120,
+                              height: 120,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+              HomePageMainContainer(height: _height, width: _width),
+            ],
+          ),
         ),
       ),
     );

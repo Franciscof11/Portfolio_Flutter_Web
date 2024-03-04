@@ -19,7 +19,7 @@ class HomePageMainContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: _height >= ResponsiveSize.fhdHeight ? 500 : 300,
+      height: _height >= ResponsiveSize.fhdHeight ? 330 : 300,
       child: Container(
         child: Center(
           child: Padding(
