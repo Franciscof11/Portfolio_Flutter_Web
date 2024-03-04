@@ -52,11 +52,11 @@ class ProfilePage extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Container(width: double.infinity, height: 400, child: ProfileImageSection()),
+                      Container(width: double.infinity, height: 300, child: ProfileImageSection()),
                       SizedBox(
                         height: 20,
                       ),
-                      ProfileDetailsSection(contactButtons: MyStrings.contactButtons),
+                      ProfileDetailsSection(contactButtons: MyStrings.contactButtons, isMobile: true),
                     ],
                   ),
                 ),

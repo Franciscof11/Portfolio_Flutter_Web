@@ -4,9 +4,11 @@ import 'package:my_portfolio/Models/launch_url.dart';
 import 'package:my_portfolio/Models/my_strings.dart';
 
 class ProfileDetailsSection extends StatelessWidget {
+  final bool isMobile;
   const ProfileDetailsSection({
     Key? key,
     required List<Map<String, dynamic>> contactButtons,
+    this.isMobile = false,
   })  : _contactButtons = contactButtons,
         super(key: key);
 
@@ -60,7 +62,7 @@ class ProfileDetailsSection extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              SizedBox(width: 20),
+              SizedBox(width: isMobile ? 5 : 20),
               Container(
                 height: 50,
                 width: 50,
@@ -84,7 +86,7 @@ class ProfileDetailsSection extends StatelessWidget {
           ),
           SizedBox(height: 45),
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 80),
+            padding: EdgeInsets.symmetric(horizontal: isMobile ? 10 : 80),
             child: ElevatedButton(
               style: ButtonStyle(
                 padding: MaterialStateProperty.all(EdgeInsets.symmetric(horizontal: 40, vertical: 20)),
