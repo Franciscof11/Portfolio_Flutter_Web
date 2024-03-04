@@ -3,12 +3,10 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:my_portfolio/Models/my_strings.dart';
 
 class HeadingText extends StatelessWidget {
-/*   final bool isMobile; */
   final double responsivePadding;
   const HeadingText({
     Key? key,
     required this.responsivePadding,
-/*     required this.isMobile, */
   }) : super(key: key);
 
   @override
@@ -18,7 +16,6 @@ class HeadingText extends StatelessWidget {
       child: Text(
         MyStrings.headLine,
         textAlign: TextAlign.center,
-        /*      textAlign: isMobile ? TextAlign.center : TextAlign.start, */
         style: GoogleFonts.raleway(
           color: Colors.black87,
           fontSize: 32,

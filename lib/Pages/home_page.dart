@@ -63,7 +63,10 @@ class HomePage extends StatelessWidget {
                         ),
                       ],
                     ),
-              HomePageMainContainer(height: _height, width: _width),
+              HomePageMainContainer(
+                height: _height,
+                width: _width,
+              ),
             ],
           ),
         ),
