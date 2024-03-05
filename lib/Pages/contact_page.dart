@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:lottie/lottie.dart';
 import 'package:my_portfolio/Custom%20Things/remove_glow_effet.dart';
 
@@ -14,8 +15,7 @@ class WorksPage extends StatelessWidget {
 
     return Container(
       child: Padding(
-        padding:
-            EdgeInsets.symmetric(horizontal: _responsivePadding, vertical: 0),
+        padding: EdgeInsets.symmetric(horizontal: _responsivePadding, vertical: 0),
         child: _width >= ResponsiveSize.tabWidth
             ? Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 30),
@@ -26,11 +26,11 @@ class WorksPage extends StatelessWidget {
                       children: [
                         SizedBox(height: 4),
                         Text(
-                          'Contatos',
-                          style: TextStyle(
+                          'Contato',
+                          style: GoogleFonts.raleway(
                             fontSize: 50,
                             color: Colors.black87,
-                            fontWeight: FontWeight.bold,
+                            fontWeight: FontWeight.w500,
                           ),
                         ),
                         SizedBox(height: 30),
@@ -47,26 +47,20 @@ class WorksPage extends StatelessWidget {
                                   SizedBox(height: 20),
                                   Text(
                                     'Mande uma mensagem!',
-                                    style: TextStyle(
+                                    style: GoogleFonts.raleway(
                                       fontSize: 25,
                                       color: Colors.black87,
-                                      fontWeight: FontWeight.bold,
+                                      fontWeight: FontWeight.w600,
                                     ),
                                   ),
                                   SizedBox(height: 50),
                                   Container(
                                     width: 400,
                                     height: 70,
-                                    decoration: BoxDecoration(
-                                        color:
-                                            Color.fromARGB(255, 152, 245, 175),
-                                        borderRadius:
-                                            BorderRadius.circular(14)),
+                                    decoration: BoxDecoration(color: Color.fromARGB(255, 152, 245, 175), borderRadius: BorderRadius.circular(14)),
                                     child: Row(
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.center,
-                                      crossAxisAlignment:
-                                          CrossAxisAlignment.center,
+                                      mainAxisAlignment: MainAxisAlignment.center,
+                                      crossAxisAlignment: CrossAxisAlignment.center,
                                       children: [
                                         Image.asset(
                                           'assets/icons/whatsapp.png',
@@ -76,24 +70,23 @@ class WorksPage extends StatelessWidget {
                                         SizedBox(width: 15),
                                         Text(
                                           'WhatsApp:',
-                                          style: TextStyle(
+                                          style: GoogleFonts.raleway(
                                             fontSize: 22,
                                             color: Colors.black87,
-                                            fontWeight: FontWeight.bold,
+                                            fontWeight: FontWeight.w500,
                                           ),
                                         ),
                                         SizedBox(width: 15),
                                         ElevatedButton(
                                           onPressed: () async {
-                                            await MyUrl.launchURL(
-                                                MyStrings.whats);
+                                            await MyUrl.launchURL(MyStrings.whats);
                                           },
                                           child: Text(
                                             'Clique Aqui',
-                                            style: TextStyle(
-                                              fontSize: 17,
+                                            style: GoogleFonts.raleway(
+                                              fontSize: 18,
                                               color: Colors.black87,
-                                              fontWeight: FontWeight.bold,
+                                              fontWeight: FontWeight.w500,
                                             ),
                                           ),
                                           style: ElevatedButton.styleFrom(
@@ -108,14 +101,9 @@ class WorksPage extends StatelessWidget {
                                   Container(
                                     width: 400,
                                     height: 70,
-                                    decoration: BoxDecoration(
-                                        color:
-                                            Color.fromARGB(255, 152, 245, 175),
-                                        borderRadius:
-                                            BorderRadius.circular(14)),
+                                    decoration: BoxDecoration(color: Color.fromARGB(255, 152, 245, 175), borderRadius: BorderRadius.circular(14)),
                                     child: Row(
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.center,
+                                      mainAxisAlignment: MainAxisAlignment.center,
                                       children: [
                                         Image.asset(
                                           'assets/icons/email.png',
@@ -125,40 +113,10 @@ class WorksPage extends StatelessWidget {
                                         SizedBox(width: 15),
                                         Text(
                                           ' franciscogabrielf11@gmail.com',
-                                          style: TextStyle(
+                                          style: GoogleFonts.raleway(
                                             fontSize: 22,
                                             color: Colors.black87,
-                                            fontWeight: FontWeight.bold,
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                  SizedBox(height: 50),
-                                  Container(
-                                    width: 400,
-                                    height: 70,
-                                    decoration: BoxDecoration(
-                                        color:
-                                            Color.fromARGB(255, 152, 245, 175),
-                                        borderRadius:
-                                            BorderRadius.circular(14)),
-                                    child: Row(
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.center,
-                                      children: [
-                                        Image.asset(
-                                          'assets/icons/phone.png',
-                                          width: 35,
-                                          height: 35,
-                                        ),
-                                        SizedBox(width: 15),
-                                        Text(
-                                          '+55 (98) 98504-3843                        ',
-                                          style: TextStyle(
-                                            fontSize: 22,
-                                            color: Colors.black87,
-                                            fontWeight: FontWeight.bold,
+                                            fontWeight: FontWeight.w500,
                                           ),
                                         ),
                                       ],
@@ -170,15 +128,12 @@ class WorksPage extends StatelessWidget {
                                     children: [
                                       ElevatedButton(
                                         onPressed: () async {
-                                          await MyUrl.launchURL(
-                                              MyStrings.githubLink);
+                                          await MyUrl.launchURL(MyStrings.githubLink);
                                         },
                                         style: ElevatedButton.styleFrom(
-                                          backgroundColor: Color.fromARGB(
-                                              255, 152, 245, 175),
+                                          backgroundColor: Color.fromARGB(255, 152, 245, 175),
                                           shape: RoundedRectangleBorder(
-                                            borderRadius:
-                                                BorderRadius.circular(14),
+                                            borderRadius: BorderRadius.circular(14),
                                           ),
                                         ),
                                         child: Container(
@@ -192,15 +147,12 @@ class WorksPage extends StatelessWidget {
                                       SizedBox(width: 30),
                                       ElevatedButton(
                                         onPressed: () async {
-                                          await MyUrl.launchURL(
-                                              MyStrings.linkedinLink);
+                                          await MyUrl.launchURL(MyStrings.linkedinLink);
                                         },
                                         style: ElevatedButton.styleFrom(
-                                          backgroundColor: Color.fromARGB(
-                                              255, 152, 245, 175),
+                                          backgroundColor: Color.fromARGB(255, 152, 245, 175),
                                           shape: RoundedRectangleBorder(
-                                            borderRadius:
-                                                BorderRadius.circular(14),
+                                            borderRadius: BorderRadius.circular(14),
                                           ),
                                         ),
                                         child: Container(
@@ -220,8 +172,7 @@ class WorksPage extends StatelessWidget {
                             Container(
                               width: 550,
                               height: 550,
-                              child: Lottie.network(
-                                  'https://assets8.lottiefiles.com/packages/lf20_hokifDNfXn.json'),
+                              child: Lottie.network('https://assets8.lottiefiles.com/packages/lf20_hokifDNfXn.json'),
                             ),
                           ],
                         ),
@@ -231,17 +182,15 @@ class WorksPage extends StatelessWidget {
                 ),
               )
             /*Parte Responsiva para Mobile*/
-            : SingleChildScrollView(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    Container(
-                      width: double.infinity,
-                      height: 390,
-                      child: Column(
+            : RemoveGlowEffect(
+                child: SingleChildScrollView(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Column(
                         children: [
                           Text(
-                            'Contact',
+                            'Contato',
                             style: TextStyle(
                               fontSize: 40,
                               color: Colors.black87,
@@ -252,51 +201,22 @@ class WorksPage extends StatelessWidget {
                           Container(
                             width: double.infinity,
                             height: 55,
-                            decoration: BoxDecoration(
-                                color: Color.fromARGB(255, 152, 245, 175),
-                                borderRadius: BorderRadius.circular(14)),
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Image.asset(
-                                  'assets/icons/phone.png',
-                                  width: 25,
-                                  height: 25,
-                                ),
-                                SizedBox(width: 15),
-                                Text(
-                                  'Phone:  +55 (98) 99161-9987     ',
-                                  style: TextStyle(
-                                    fontSize: 18,
-                                    color: Colors.black87,
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                          SizedBox(height: 25),
-                          Container(
-                            width: double.infinity,
-                            height: 55,
-                            decoration: BoxDecoration(
-                                color: Color.fromARGB(255, 152, 245, 175),
-                                borderRadius: BorderRadius.circular(14)),
+                            decoration: BoxDecoration(color: Color.fromARGB(255, 152, 245, 175), borderRadius: BorderRadius.circular(14)),
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 Image.asset(
                                   'assets/icons/email.png',
-                                  width: 25,
-                                  height: 25,
+                                  width: 20,
+                                  height: 20,
                                 ),
                                 SizedBox(width: 15),
                                 Text(
                                   ' franciscogabrielf11@gmail.com',
-                                  style: TextStyle(
-                                    fontSize: 19,
+                                  style: GoogleFonts.raleway(
+                                    fontSize: 15,
                                     color: Colors.black87,
-                                    fontWeight: FontWeight.bold,
+                                    fontWeight: FontWeight.w500,
                                   ),
                                 ),
                               ],
@@ -306,25 +226,23 @@ class WorksPage extends StatelessWidget {
                           Container(
                             width: double.infinity,
                             height: 50,
-                            decoration: BoxDecoration(
-                                color: Color.fromARGB(255, 152, 245, 175),
-                                borderRadius: BorderRadius.circular(14)),
+                            decoration: BoxDecoration(color: Color.fromARGB(255, 152, 245, 175), borderRadius: BorderRadius.circular(14)),
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.center,
                               crossAxisAlignment: CrossAxisAlignment.center,
                               children: [
                                 Image.asset(
                                   'assets/icons/whatsapp.png',
-                                  width: 25,
-                                  height: 25,
+                                  width: 20,
+                                  height: 20,
                                 ),
                                 SizedBox(width: 15),
                                 Text(
                                   'WhatsApp:',
-                                  style: TextStyle(
-                                    fontSize: 22,
+                                  style: GoogleFonts.raleway(
+                                    fontSize: 15,
                                     color: Colors.black87,
-                                    fontWeight: FontWeight.bold,
+                                    fontWeight: FontWeight.w500,
                                   ),
                                 ),
                                 SizedBox(width: 15),
@@ -333,11 +251,11 @@ class WorksPage extends StatelessWidget {
                                     await MyUrl.launchURL(MyStrings.whats);
                                   },
                                   child: Text(
-                                    'Click Here',
-                                    style: TextStyle(
-                                      fontSize: 18,
+                                    'Clique Aqui',
+                                    style: GoogleFonts.raleway(
+                                      fontSize: 15,
                                       color: Colors.black87,
-                                      fontWeight: FontWeight.bold,
+                                      fontWeight: FontWeight.w700,
                                     ),
                                   ),
                                   style: ElevatedButton.styleFrom(
@@ -357,8 +275,7 @@ class WorksPage extends StatelessWidget {
                                   await MyUrl.launchURL(MyStrings.githubLink);
                                 },
                                 style: ElevatedButton.styleFrom(
-                                  backgroundColor:
-                                      Color.fromARGB(255, 152, 245, 175),
+                                  backgroundColor: Color.fromARGB(255, 152, 245, 175),
                                   shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(14),
                                   ),
@@ -377,8 +294,7 @@ class WorksPage extends StatelessWidget {
                                   await MyUrl.launchURL(MyStrings.linkedinLink);
                                 },
                                 style: ElevatedButton.styleFrom(
-                                  backgroundColor:
-                                      Color.fromARGB(255, 152, 245, 175),
+                                  backgroundColor: Color.fromARGB(255, 152, 245, 175),
                                   shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(14),
                                   ),
@@ -395,16 +311,17 @@ class WorksPage extends StatelessWidget {
                           ),
                         ],
                       ),
-                    ),
-                    Container(
-                      width: double.infinity,
-                      height: 290,
-                      child: Lottie.network(
-                        'https://assets8.lottiefiles.com/packages/lf20_hokifDNfXn.json',
-                        fit: BoxFit.contain,
+                      SizedBox(height: 20),
+                      Container(
+                        width: double.infinity,
+                        height: 280,
+                        child: Lottie.network(
+                          'https://assets8.lottiefiles.com/packages/lf20_hokifDNfXn.json',
+                          fit: BoxFit.contain,
+                        ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
               ),
       ),
