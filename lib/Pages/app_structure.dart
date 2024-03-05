@@ -219,7 +219,7 @@ class _AppStructureState extends State<AppStructure> {
                     child: Align(
                       alignment: Alignment.bottomCenter,
                       child: Container(
-                        padding: EdgeInsets.only(bottom: 14),
+                        padding: EdgeInsets.only(bottom: 10),
                         width: double.infinity,
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
@@ -256,7 +256,7 @@ class _AppStructureState extends State<AppStructure> {
                                     : const EdgeInsets.symmetric(horizontal: 25, vertical: 40)))),
                     child: _height >= 540
                         ? Padding(
-                            padding: const EdgeInsets.all(12),
+                            padding: const EdgeInsets.all(0),
                             child: Container(
                               padding: EdgeInsets.only(top: 20),
                               decoration: BoxDecoration(

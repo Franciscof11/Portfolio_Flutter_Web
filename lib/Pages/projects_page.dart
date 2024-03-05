@@ -1,139 +1,66 @@
-import 'package:container_tab_indicator/container_tab_indicator.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:my_portfolio/Custom%20Things/remove_glow_effet.dart';
-
-import '../Models/responsive_size.dart';
-import 'projects_pages/all_page.dart';
-import 'projects_pages/flutter_page.dart';
-import 'projects_pages/kotlin_page.dart';
+import 'package:my_portfolio/Pages/components/carousel_projects.dart';
 
 class SkillsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    double _width = MediaQuery.of(context).size.width;
-    double _responsivePadding = _width >= ResponsiveSize.mobileWidth ? 50 : 15;
+    double _height = MediaQuery.of(context).size.height;
 
-    return Padding(
-      padding:
-          EdgeInsets.symmetric(horizontal: _responsivePadding, vertical: 20),
-      child: _width >= ResponsiveSize.tabWidth
-          ? Container(
-              width: MediaQuery.of(context).size.width,
-              height: MediaQuery.of(context).size.height,
-              child: RemoveGlowEffect(
-                child: SingleChildScrollView(
-                  child: Column(
-                    children: [
-                      SizedBox(height: 20),
-                      Text(
-                        'Projects',
-                        style: TextStyle(
-                          fontSize: 50,
-                          color: Colors.black87,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                      SizedBox(height: 20),
-                      DefaultTabController(
-                        length: 3,
-                        child: Column(
-                          children: [
-                            Container(
-                              decoration: BoxDecoration(
-                                  borderRadius:
-                                      BorderRadius.all(Radius.circular(16))),
-                              width: 1200,
-                              height: 564,
-                              child: Column(
-                                children: [
-                                  SizedBox(height: 20),
-                                  Expanded(
-                                    child: TabBarView(children: [
-                                      AllPage(),
-                                    ]),
-                                  )
-                                ],
-                              ),
-                            )
-                          ],
-                        ),
-                      ),
-                    ],
-                  ),
+    return _height >= 880
+        ? Column(
+            children: [
+              //
+              Text(
+                'Projetos',
+                style: GoogleFonts.raleway(
+                  fontSize: 50,
+                  color: Colors.black87,
+                  fontWeight: FontWeight.w500,
                 ),
               ),
-            )
-          :
-          /*Parte Responsiva para Mobile*/
-          Container(
-              width: MediaQuery.of(context).size.width,
-              height: 1000,
+              //
+              Container(
+                width: double.infinity,
+                height: 560,
+                child: CarouselProjects(isMobile: false),
+              ),
+              //
+            ],
+          )
+        :
+        //
+        //
+        //
+        // MOBILE
+        //
+        //
+        //
+        RemoveGlowEffect(
+            child: SingleChildScrollView(
               child: Column(
                 children: [
+                  //
                   Text(
-                    'Projects',
-                    style: TextStyle(
-                      fontSize: 40,
+                    'Projetos',
+                    style: GoogleFonts.raleway(
+                      fontSize: 35,
                       color: Colors.black87,
-                      fontWeight: FontWeight.bold,
+                      fontWeight: FontWeight.w500,
                     ),
                   ),
-                  SizedBox(height: 20),
-                  DefaultTabController(
-                    length: 3,
-                    child: Column(
-                      children: [
-                        Container(
-                          decoration: BoxDecoration(
-                              borderRadius:
-                                  BorderRadius.all(Radius.circular(16))),
-                          width: 1200,
-                          height: 611,
-                          child: Column(
-                            children: [
-                              Container(
-                                decoration: BoxDecoration(
-                                    borderRadius:
-                                        BorderRadius.all(Radius.circular(16))),
-                                width: 360,
-                                child: TabBar(
-                                  overlayColor: MaterialStatePropertyAll(
-                                      Colors.transparent),
-                                  onTap: (value) => {},
-                                  unselectedLabelColor: Colors.grey[800],
-                                  labelColor: Colors.deepPurple,
-                                  labelStyle: TextStyle(
-                                    fontSize: 22,
-                                    color: Colors.black87,
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                                  indicator: const ContainerTabIndicator(
-                                    height: 3,
-                                    padding: EdgeInsets.only(top: 20),
-                                    width: 40,
-                                    color: Colors.deepPurple,
-                                  ),
-                                  tabs: [],
-                                ),
-                              ),
-                              SizedBox(height: 20),
-                              Expanded(
-                                child: TabBarView(children: [
-                                  AllPage(),
-                                  FlutterPage(),
-                                  KotlinPage(),
-                                ]),
-                              )
-                            ],
-                          ),
-                        )
-                      ],
-                    ),
+                  SizedBox(height: 15),
+                  //
+                  Container(
+                    width: double.infinity,
+                    height: 560,
+                    child: CarouselProjects(isMobile: true),
                   ),
-                  SizedBox(height: 20),
+                  //
                 ],
               ),
             ),
-    );
+          );
   }
 }

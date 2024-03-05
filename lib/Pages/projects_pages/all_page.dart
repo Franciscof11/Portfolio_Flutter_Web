@@ -5,8 +5,8 @@ import '../../Models/launch_url.dart';
 import '../../Models/my_strings.dart';
 import '../../Models/responsive_size.dart';
 
-class AllPage extends StatelessWidget {
-  const AllPage({super.key});
+class SaveYouTeartsForAnotehrDay extends StatelessWidget {
+  const SaveYouTeartsForAnotehrDay({super.key});
 
   @override
   Widget build(BuildContext context) {
