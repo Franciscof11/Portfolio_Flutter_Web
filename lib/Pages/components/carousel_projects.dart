@@ -23,6 +23,8 @@ class _CarouselWithIndicatorState extends State<CarouselProjects> {
       Expanded(
         child: CarouselSlider(
           items: [
+            //
+            //
             ProjectTile(
               isMobile: widget.isMobile,
               projectIconPath: 'assets/icons/mock_shop.json',
@@ -32,32 +34,45 @@ class _CarouselWithIndicatorState extends State<CarouselProjects> {
               projectLinkUrl: MyStrings.mockShopLink,
               projectImagePath: 'assets/icons/mock_shop.png',
             ),
+            //
+            //
             ProjectTile(
               isMobile: widget.isMobile,
-              projectIconPath: 'assets/icons/mock_shop.json',
-              projectTitle: 'Mock Shop',
+              projectIconPath: 'assets/icons/right.json',
+              paddingTop: 24,
+              projectTitle: 'Right',
               projectDescription:
-                  'Aplicativo que simula um e-commerce online, permite explorar a lista de produtos, ver os detalhes dos produtos e simula um carrinho de compras.',
-              projectLinkUrl: MyStrings.mockShopLink,
-              projectImagePath: 'assets/icons/mock_shop.png',
+                  'Right é um aplicativo de auxílio ao estudo, que utiliza a metodologia de flashcards. Com ele, você pode criar seus próprios cartões, favoritar os que mais lhe interessam, receber lembretes e muito mais!',
+              projectLinkUrl: MyStrings.rightLink,
+              projectImagePath: 'assets/icons/right_showup.png',
             ),
+            //
+            //
+            //
+            //
             ProjectTile(
               isMobile: widget.isMobile,
-              projectIconPath: 'assets/icons/mock_shop.json',
-              projectTitle: 'Mock Shop',
+              projectIconPath: 'assets/icons/weather.json',
+              paddingTop: 50,
+              projectTitle: 'Weather Now',
               projectDescription:
-                  'Aplicativo que simula um e-commerce online, permite explorar a lista de produtos, ver os detalhes dos produtos e simula um carrinho de compras.',
-              projectLinkUrl: MyStrings.mockShopLink,
-              projectImagePath: 'assets/icons/mock_shop.png',
+                  'Um aplicativo de previsão do tempo. O aplicativo nos mostra a temperatura atual do local escolhido e também nos informa sobre a previsão do tempo.',
+              projectLinkUrl: MyStrings.weatherNowLink,
+              projectImagePath: 'assets/icons/weather_now.png',
             ),
+            //
+            //
+            //
+            //
             ProjectTile(
               isMobile: widget.isMobile,
-              projectIconPath: 'assets/icons/mock_shop.json',
-              projectTitle: 'Mock Shop',
+              projectIconPath: 'assets/icons/portfolio2.json',
+              paddingTop: 0,
+              projectTitle: 'Portfólio Web App',
               projectDescription:
-                  'Aplicativo que simula um e-commerce online, permite explorar a lista de produtos, ver os detalhes dos produtos e simula um carrinho de compras.',
-              projectLinkUrl: MyStrings.mockShopLink,
-              projectImagePath: 'assets/icons/mock_shop.png',
+                  'Um portfólio online que mostra um pouco sobre mim, e os projetos que venho construindo. Este é meu primeiro projeto usando Flutter Web, para aplicar todo meu conhecimento de flutter ao aspecto web, trazendo responsividade e reatividade.',
+              projectLinkUrl: MyStrings.portfolioLink,
+              projectImagePath: 'assets/icons/portfolio.png',
             ),
           ],
           carouselController: _controller,

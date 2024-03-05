@@ -1,6 +1,4 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:lottie/lottie.dart';
 import 'package:my_portfolio/Models/launch_url.dart';
@@ -12,6 +10,7 @@ class ProjectTile extends StatelessWidget {
   final String projectLinkUrl;
   final String projectImagePath;
   final bool isMobile;
+  final double paddingTop;
   const ProjectTile({
     super.key,
     required this.projectIconPath,
@@ -20,12 +19,11 @@ class ProjectTile extends StatelessWidget {
     required this.projectLinkUrl,
     required this.projectImagePath,
     this.isMobile = false,
+    this.paddingTop = 50,
   });
 
   @override
   Widget build(BuildContext context) {
-    final width = MediaQuery.of(context).size.width;
-    final height = MediaQuery.of(context).size.height;
     return !isMobile
         ? Container(
             height: 530,
@@ -38,7 +36,7 @@ class ProjectTile extends StatelessWidget {
                 color: Colors.deepPurple[500],
                 child: SingleChildScrollView(
                   child: Padding(
-                    padding: const EdgeInsets.only(top: 50),
+                    padding: EdgeInsets.only(top: paddingTop),
                     child: Row(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       mainAxisAlignment: MainAxisAlignment.center,
@@ -48,8 +46,8 @@ class ProjectTile extends StatelessWidget {
                             SizedBox(height: 15),
                             Lottie.asset(
                               projectIconPath,
-                              width: 100,
-                              height: 100,
+                              width: 180,
+                              height: 180,
                             ),
                             Text(
                               projectTitle,
@@ -95,7 +93,8 @@ class ProjectTile extends StatelessWidget {
                         SizedBox(width: 25),
                         Image.asset(
                           projectImagePath,
-                          scale: width >= 1700 ? 1.5 : 2.5,
+                          width: 380,
+                          height: 380,
                         ),
                       ],
                     ),
@@ -123,8 +122,8 @@ class ProjectTile extends StatelessWidget {
                         SizedBox(height: 10),
                         Lottie.asset(
                           projectIconPath,
-                          width: 130,
-                          height: 130,
+                          width: 100,
+                          height: 100,
                         ),
                         Text(
                           projectTitle,
