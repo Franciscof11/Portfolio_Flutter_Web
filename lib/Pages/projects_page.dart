@@ -45,12 +45,12 @@ class SkillsPage extends StatelessWidget {
                   Text(
                     'Projetos',
                     style: GoogleFonts.raleway(
-                      fontSize: 35,
+                      fontSize: 30,
                       color: Colors.black87,
-                      fontWeight: FontWeight.w500,
+                      fontWeight: FontWeight.w400,
                     ),
                   ),
-                  SizedBox(height: 15),
+                  SizedBox(height: 10),
                   //
                   Container(
                     width: double.infinity,

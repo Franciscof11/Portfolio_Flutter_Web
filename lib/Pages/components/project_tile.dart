@@ -24,6 +24,8 @@ class ProjectTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final width = MediaQuery.of(context).size.width;
+    final height = MediaQuery.of(context).size.height;
     return !isMobile
         ? Container(
             height: 530,
@@ -35,66 +37,68 @@ class ProjectTile extends StatelessWidget {
                 shape: ContinuousRectangleBorder(borderRadius: BorderRadius.circular(14)),
                 color: Colors.deepPurple[500],
                 child: SingleChildScrollView(
-                  child: Row(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Column(
-                        children: [
-                          SizedBox(height: 15),
-                          Lottie.network(
-                            projectIconPath,
-                            width: 180,
-                            height: 180,
-                          ),
-                          Text(
-                            projectTitle,
-                            style: GoogleFonts.raleway(
-                              color: Colors.white,
-                              fontSize: 30,
+                  child: Padding(
+                    padding: const EdgeInsets.only(top: 50),
+                    child: Row(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Column(
+                          children: [
+                            SizedBox(height: 15),
+                            Lottie.asset(
+                              projectIconPath,
+                              width: 100,
+                              height: 100,
                             ),
-                          ),
-                          SizedBox(height: 10),
-                          Container(
-                            width: 450,
-                            child: Text(
-                              maxLines: 5,
-                              projectDescription,
-                              style: TextStyle(
+                            Text(
+                              projectTitle,
+                              style: GoogleFonts.raleway(
                                 color: Colors.white,
-                                fontSize: 18,
-                                overflow: TextOverflow.ellipsis,
+                                fontSize: 30,
                               ),
-                              textAlign: TextAlign.justify,
                             ),
-                          ),
-                          SizedBox(height: 25),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              SizedBox(width: 25),
-                              ElevatedButton(
-                                style: ElevatedButton.styleFrom(fixedSize: Size(200, 50), backgroundColor: Colors.white),
-                                onPressed: () async {
-                                  await MyUrl.launchURL(projectLinkUrl);
-                                },
-                                child: Image.asset(
-                                  'assets/icons/github_icon.png',
-                                  height: 400,
-                                  width: 400,
+                            SizedBox(height: 10),
+                            Container(
+                              width: 450,
+                              child: Text(
+                                maxLines: 5,
+                                projectDescription,
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 18,
+                                  overflow: TextOverflow.ellipsis,
                                 ),
+                                textAlign: TextAlign.justify,
                               ),
-                            ],
-                          ),
-                        ],
-                      ),
-                      SizedBox(width: 25),
-                      Image.asset(
-                        projectImagePath,
-                        width: 380,
-                        height: 380,
-                      ),
-                    ],
+                            ),
+                            SizedBox(height: 25),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                SizedBox(width: 25),
+                                ElevatedButton(
+                                  style: ElevatedButton.styleFrom(fixedSize: Size(200, 50), backgroundColor: Colors.white),
+                                  onPressed: () async {
+                                    await MyUrl.launchURL(projectLinkUrl);
+                                  },
+                                  child: Image.asset(
+                                    'assets/icons/github_icon.png',
+                                    height: 400,
+                                    width: 400,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                        SizedBox(width: 25),
+                        Image.asset(
+                          projectImagePath,
+                          scale: width >= 1700 ? 1.5 : 2.5,
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ),
