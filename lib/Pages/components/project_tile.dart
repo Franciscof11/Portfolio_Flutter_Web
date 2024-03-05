@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -116,10 +117,10 @@ class ProjectTile extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         SizedBox(height: 10),
-                        Lottie.network(
+                        Lottie.asset(
                           projectIconPath,
-                          width: 90,
-                          height: 90,
+                          width: 130,
+                          height: 130,
                         ),
                         Text(
                           projectTitle,
@@ -128,26 +129,24 @@ class ProjectTile extends StatelessWidget {
                             fontSize: 25,
                           ),
                         ),
-                        SizedBox(height: 10),
-                        SizedBox(
-                          height: 145,
-                          child: Text(
-                            projectDescription,
-                            style: GoogleFonts.raleway(
-                              color: Colors.white,
-                              fontSize: 14,
-                            ),
-                            textAlign: TextAlign.justify,
+                        SizedBox(height: 5),
+                        Text(
+                          projectDescription,
+                          style: GoogleFonts.raleway(
+                            color: Colors.white,
+                            fontSize: 14,
                           ),
+                          textAlign: TextAlign.justify,
                         ),
-                        SizedBox(height: 25),
+                        SizedBox(height: 0),
                         Image.asset(
                           projectImagePath,
-                          width: 200,
-                          height: 200,
+                          width: 160,
+                          height: 160,
                         ),
+                        SizedBox(height: 12),
                         ElevatedButton(
-                          style: ElevatedButton.styleFrom(fixedSize: Size(200, 50), backgroundColor: Colors.white),
+                          style: ElevatedButton.styleFrom(fixedSize: Size(190, 36), backgroundColor: Colors.white),
                           onPressed: () async {
                             await MyUrl.launchURL(projectLinkUrl);
                           },

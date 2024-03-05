@@ -25,7 +25,7 @@ class _CarouselWithIndicatorState extends State<CarouselProjects> {
           items: [
             ProjectTile(
               isMobile: widget.isMobile,
-              projectIconPath: 'https://assets7.lottiefiles.com/packages/lf20_TMRZ23.json',
+              projectIconPath: 'assets/icons/mock_shop.json',
               projectTitle: 'Mock Shop',
               projectDescription:
                   'Aplicativo que simula um e-commerce online, permite explorar a lista de produtos, ver os detalhes dos produtos e simula um carrinho de compras.',
@@ -34,7 +34,7 @@ class _CarouselWithIndicatorState extends State<CarouselProjects> {
             ),
             ProjectTile(
               isMobile: widget.isMobile,
-              projectIconPath: 'https://assets7.lottiefiles.com/packages/lf20_TMRZ23.json',
+              projectIconPath: 'assets/icons/mock_shop.json',
               projectTitle: 'Mock Shop',
               projectDescription:
                   'Aplicativo que simula um e-commerce online, permite explorar a lista de produtos, ver os detalhes dos produtos e simula um carrinho de compras.',
@@ -43,7 +43,7 @@ class _CarouselWithIndicatorState extends State<CarouselProjects> {
             ),
             ProjectTile(
               isMobile: widget.isMobile,
-              projectIconPath: 'https://assets7.lottiefiles.com/packages/lf20_TMRZ23.json',
+              projectIconPath: 'assets/icons/mock_shop.json',
               projectTitle: 'Mock Shop',
               projectDescription:
                   'Aplicativo que simula um e-commerce online, permite explorar a lista de produtos, ver os detalhes dos produtos e simula um carrinho de compras.',
@@ -52,7 +52,7 @@ class _CarouselWithIndicatorState extends State<CarouselProjects> {
             ),
             ProjectTile(
               isMobile: widget.isMobile,
-              projectIconPath: 'https://assets7.lottiefiles.com/packages/lf20_TMRZ23.json',
+              projectIconPath: 'assets/icons/mock_shop.json',
               projectTitle: 'Mock Shop',
               projectDescription:
                   'Aplicativo que simula um e-commerce online, permite explorar a lista de produtos, ver os detalhes dos produtos e simula um carrinho de compras.',
