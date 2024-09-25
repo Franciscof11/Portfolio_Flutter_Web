@@ -11,6 +11,10 @@ class ProjectTile extends StatelessWidget {
   final String projectImagePath;
   final bool isMobile;
   final double paddingTop;
+  final double lottieWidth;
+  final double lottieHeight;
+  final bool isPoke;
+  final double pokeHeight;
   const ProjectTile({
     super.key,
     required this.projectIconPath,
@@ -20,6 +24,10 @@ class ProjectTile extends StatelessWidget {
     required this.projectImagePath,
     this.isMobile = false,
     this.paddingTop = 50,
+    this.lottieWidth = 180,
+    this.lottieHeight = 180,
+    this.isPoke = false,
+    this.pokeHeight = 480,
   });
 
   @override
@@ -45,12 +53,13 @@ class ProjectTile extends StatelessWidget {
                           flex: 2,
                           child: Column(
                             children: [
-                              SizedBox(height: 15),
+                              SizedBox(height: 10),
                               Lottie.asset(
                                 projectIconPath,
-                                width: 180,
-                                height: 180,
+                                width: lottieWidth,
+                                height: lottieHeight,
                               ),
+                              SizedBox(height: 15),
                               Text(
                                 projectTitle,
                                 style: GoogleFonts.raleway(
@@ -94,11 +103,16 @@ class ProjectTile extends StatelessWidget {
                           ),
                         ),
                         SizedBox(width: 25),
-                        Expanded(
-                          child: Image.asset(
-                            projectImagePath,
-                          ),
-                        ),
+                        isPoke
+                            ? Image.asset(
+                                projectImagePath,
+                                height: pokeHeight,
+                              )
+                            : Expanded(
+                                child: Image.asset(
+                                  projectImagePath,
+                                ),
+                              )
                       ],
                     ),
                   ),
