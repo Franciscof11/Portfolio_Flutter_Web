@@ -2,6 +2,7 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:my_portfolio/Models/my_strings.dart';
 import 'package:my_portfolio/Pages/components/project_tile.dart';
+import 'package:my_portfolio/Pages/components/published_project_tile.dart';
 
 class CarouselProjects extends StatefulWidget {
   final bool isMobile;
@@ -17,7 +18,6 @@ class _CarouselWithIndicatorState extends State<CarouselProjects> {
   int _current = 0;
   final CarouselController _controller = CarouselController();
   final imgList = [
-    '0',
     '1',
     '2',
     '3',
@@ -25,6 +25,9 @@ class _CarouselWithIndicatorState extends State<CarouselProjects> {
     '5',
     '6',
     '7',
+    '8',
+    '9',
+    '10',
   ];
   @override
   Widget build(BuildContext context) {
@@ -32,6 +35,37 @@ class _CarouselWithIndicatorState extends State<CarouselProjects> {
       Expanded(
         child: CarouselSlider(
           items: [
+            //
+            //
+            ProjectTile(
+              isMobile: widget.isMobile,
+              paddingTop: 15,
+              projectIconPath: 'assets/icons/midjourney.json',
+              projectTitle: 'Midjourney App',
+              isPoke: true,
+              pokeHeight: 430,
+              lottieWidth: 140,
+              lottieHeight: 140,
+              projectDescription: 'Midjourney App é uma ferramenta de criação de imagens via prompt (descrição da imagem que deseja gerar). Utiliza o api oficial do ChatGPT e o Remote Config do Firebase para maior segurança no armazenamento da Api Key dentro do aplicativo.',
+              projectLinkUrl: 'https://github.com/Franciscof11/Midjourney_App',
+              projectImagePath: 'assets/icons/midjourney.png',
+            ),
+            //
+            //
+            PublishedProjectTile(
+              isMobile: widget.isMobile,
+              paddingTop: 35,
+              projectIconPath: 'assets/icons/vemca_logo.png',
+              projectTitle: 'Vem Ca',
+              isPoke: true,
+              pokeHeight: 380,
+              lottieWidth: 120,
+              lottieHeight: 120,
+              projectDescription: 'O Vem CA é a plataforma nacional de cultura acessível. Atividades culturais acessíveis estão disponíveis para todos, com ou sem deficiência, como peças com língua de sinais, filmes com audiodescrição e até feira de gastronomia.',
+              projectImagePath: 'assets/icons/vemca.png',
+              playStoreLink: 'https://play.google.com/store/apps/details?id=br.org.escoladegente.vemca',
+              appleStoreLink: 'https://apps.apple.com/br/app/vem-ca-cultura-acess%C3%ADvel/id1479939815?platform=iphone',
+            ),
             //
             //
             ProjectTile(
